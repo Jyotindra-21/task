@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Task</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-columns:repeat(12,auto);
+            gap: 10px 10px;
+            text-align: center;
+            height: calc(100vh - 20px);
+
+        }
+        .one {
+            /* padding: 20px; */
+            /* border: 2px solid black; */
+            background-color: lightgreen;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        #two1 {
+            grid-column: span 12;
+        }
+        #two2 , #two3{
+            grid-column: span 6;
+        }
+        #two4,#two5,#two6{
+            grid-column: span 4;
+        }
+        #two7,#two8,#two9,#two10{
+            grid-column: span 3;
+        }
+        #two11,#two12,#two13,#two14,#two15,#two16{
+            grid-column: span 2;
+        }  
+    </style>
+    
+</head>
+
+<body>
+    <div class="main">
+        <div class="one" id="two1">1</div>
+        <div class="one" id="two2">2</div>
+        <div class="one" id="two3">3</div>
+        <div class="one" id="two4">4</div>
+        <div class="one" id="two5">5</div>
+        <div class="one" id="two6">6</div>
+        <div class="one" id="two7">7</div>
+        <div class="one" id="two8">8</div>
+        <div class="one" id="two9">9</div>
+        <div class="one" id="two10">10</div>
+        <div class="one" id="two11">11</div>
+        <div class="one" id="two12">12</div>
+        <div class="one" id="two13">13</div>
+        <div class="one" id="two14">14</div>
+        <div class="one" id="two15">15</div>
+        <div class="one" id="two16">16</div>
+        <div class="one" id="two17">17</div>
+        <div class="one" id="two18">18</div>
+        <div class="one" id="two19">19</div>
+        <div class="one" id="two20">20</div>
+        <div class="one" id="two21">21</div>
+        <div class="one" id="two22">22</div>
+        <div class="one" id="two23">23</div>
+        <div class="one" id="two24">24</div>
+        <div class="one" id="two25">25</div>
+        <div class="one" id="two26">26</div>
+        <div class="one" id="two27">27</div>
+        <div class="one" id="two28">28</div>
+    </div>
+</body>
+
+</html>

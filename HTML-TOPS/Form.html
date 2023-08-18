@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form : Student Information Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Student Information</legend>
+        <form action="#">
+            <table align="center">
+                <caption>Student Form</caption>
+                <tr>
+                    <td><label for="fullname">Student Name</label></td>
+                    <td><input type="text" placeholder="John" required></td>
+                    <td><input type="text" placeholder="Deo" required></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td ><label for="gender">Gender</label></td>
+                    <td><label for="male">Male</label><input type="radio" name="gender" id="male"></td>
+                    <td><label for="female">Female</label> <input type="radio" name="gender" id="female"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone</label></td>
+                    <td><input type="phone" maxlength="10" min="10"></td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+</body>
+</html>

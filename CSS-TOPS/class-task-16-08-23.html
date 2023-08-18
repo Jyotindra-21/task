@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      body {
+        background-color: rgb(29, 29, 29);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        /* background-color: black; */
+        gap: 10px;
+        padding: 10px;
+      }
+      .child {
+        /* padding: 20px; */
+        border: 2px solid red;
+      }
+      #one6 {
+        grid-column: 1/4;
+      }
+      #one7 {
+        grid-column: 4/6;
+      }
+      .circle {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        background-image: linear-gradient(silver, white);
+        position: absolute;
+        left: -50px;
+        top: -25px;
+      }
+      /* .circle i{
+        font-size: 20px;
+        display: flex;
+        color: black;
+        justify-content: right;
+        align-items: right;
+      } */
+      .link {
+        overflow: hidden;
+        height: 50px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-color: rgb(95, 94, 94);
+        box-shadow: 1px 1px 10px rgb(95, 94, 94);
+      }
+      .link > h2 {
+        color: yellow;
+      }
+      .theme {
+        padding: 20px;
+      }
+      h1 {
+        color: white;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+      }
+      .theme h1::before {
+        content: "||";
+        height: 20px;
+        width: 2px;
+        color: gray;
+        margin-right: 10px;
+        background-color: gray;
+      }
+      .theme h6{
+        color: white;
+        font-size: 16px;
+        margin-top: 10px;
+        font-weight: 400;
+      }
+      .theme p{
+        margin-top: 10px;
+        color: rgba(128, 128, 128, 0.51);
+      }
+      .theme  p span{
+        color: yellow;
+      }
+      .theme-img {
+        height: 200px;
+        height: 50vh;
+        border-radius: 10px;
+        background-color: black;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="child link" id="one1">
+        <i class="fa-solid fa-house"></i>
+        <div class="circle"></i></div>
+        <h2>home</h2>
+      </div>
+      <div class="child link" id="one2">
+        <div class="circle"></div>
+        <h2>About</h2>
+      </div>
+      <div class="child link" id="one3">
+        <div class="circle"></div>
+        <h2>Portfolio</h2>
+      </div>
+      <div class="child link" id="one4">
+        <div class="circle"></div>
+        <h2>Services</h2>
+      </div>
+      <div class="child link" id="one5">
+        <div class="circle"></div>
+        <h2>Contact</h2>
+      </div>
+      <div class="child theme-welcome" id="one6">
+        
+      </div>
+      <div class="child theme" id="one05">
+        <h1>Welcome to Simple grid theme</h1>
+        <div class="theme-img"></div>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus incidunt ullam porro temporibus, dignissimos corrupti rerum soluta recusandae maiores sunt, voluptatibus nisi mollitia. Repellendus molestias sunt voluptates totam id sint.</h6>
+        <p> <span>Lorem ipsum dolor</span>, sit amet consectetur adipisicing elit. Quos a enim porro tenetur deleniti aperiam id quibusdam placeat debitis. Asperiores hic cum totam deleniti iste similique temporibus minima fugiat fuga, ducimus repellat? Eligendi aut <span>error necessitatibus</span> nisi repellat nam cum? Doloremque maiores expedita excepturi consequuntur corporis pariatur deleniti libero fugiat dolore, alias culpa ab architecto velit similique temporibus quasi aperiam cumque explicabo laborum! Laborum accusamus possimus nam minima provident eius neque asperiores ab, minus odio vel a corporis reprehenderit quae quis cupiditate eaque in obcaecati fugit quam deleniti maiores culpa? Dicta nisi aspernatur omnis, voluptates laborum, voluptatem fuga temporibus corrupti incidunt amet ad harum officiis minima? Consectetur, deserunt? Aliquid enim, sit odit odio, incidunt minus asperiores natus facere laudantium consequatur tenetur quo porro est tempore inventore dignissimos voluptate earum veniam labore corrupti, ex qui ullam commodi? Similique fuga corrupti voluptas, error magni esse inventore quam! Saepe ab dolores quod amet vel dicta numquam fugit maiores assumenda commodi! Sed dignissimos corrupti tenetur commodi eveniet dolore a neque modi pariatur excepturi dolorum harum accusantium, deleniti ea voluptatem reprehenderit laudantium asperiores soluta sapiente dolor. Doloribus, architecto harum. Cumque sint aspernatur eum! Modi tempora, fuga architecto pariatur natus quaerat officia alias asperiores doloremque laborum?</p>
+      </div>
+      <div class="child" id="one7"></div>
+      <div class="child" id="one8"></div>
+      <div class="child" id="one9"></div>
+    </div>
+  </body>
+</html>

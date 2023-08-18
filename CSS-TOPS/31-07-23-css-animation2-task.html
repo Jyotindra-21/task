@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language fill loading</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .fill-box {
+            border: 2px solid yellow;
+            box-shadow: 2px 2px 5px yellow;
+            height: 20px;
+            width: 500px;
+            border-radius: 20px;
+        }
+
+        .fill {
+            background-color: yellow;
+            box-shadow: 2px 2px 5px yellow;
+            height: 20px;
+            border-radius: 20px;
+
+        }
+
+        #css {
+            width: 80%;
+            animation-timing-function: ease;
+            animation: css 1s;
+        }
+
+        @keyframes css {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 80%;
+            }
+        }
+
+        #html {
+            width: 70%;
+            animation-timing-function: ease-in;
+            animation: html 1s;
+        }
+
+        @keyframes html {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 70%;
+            }
+        }
+
+        #javascript {
+            width: 90%;
+            animation-timing-function: ease-in-out;
+            animation: javascript 1s;
+        }
+
+        @keyframes javascript {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 90%;
+            }
+        }
+
+        #c {
+            width: 40%;
+            animation-timing-function: ease-out;
+            animation: c 1s;
+        }
+
+        @keyframes c {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 40%;
+            }
+        }
+
+        #cpp {
+            width: 95%;
+            animation-timing-function: linear;
+            animation: cpp 1s;
+        }
+
+        @keyframes cpp {
+            from {
+                width: 0;
+            }
+
+            to {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>CSS</h2>
+        <div class="fill-box">
+            <div class="fill" id="css"></div>
+        </div>
+        <h2>HTML</h2>
+        <div class="fill-box">
+            <div class="fill" id="html"></div>
+        </div>
+        <h2>JAVASCRIPT</h2>
+        <div class="fill-box">
+            <div class="fill" id="javascript"></div>
+        </div>
+        <h2>C</h2>
+        <div class="fill-box">
+            <div class="fill" id="c"></div>
+        </div>
+        <h2>C++</h2>
+        <div class="fill-box">
+            <div class="fill" id="cpp"></div>
+        </div>
+    </div>
+</body>
+
+</html>

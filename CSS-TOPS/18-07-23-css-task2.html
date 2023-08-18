@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>task 2</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: deeppink;
+    }
+    .contact-form{
+        width: 800px;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 500px;
+        background-color: navy;
+        margin-top: 100px;
+        box-shadow:5px 5px 30px black;
+    }
+    input ,textarea{
+        width: 600px;
+        padding: 5px;
+        margin: 10px;
+        border: none;
+        border-bottom: 2px solid skyblue;
+        background-color: navy;
+    }
+    h2{
+        color: white;
+        padding: 30px;
+    }
+    i{
+        color: deeppink;
+    }
+    button{
+        padding: 10px 30px;
+        border-radius: 30px;
+        background-color: deeppink;
+        font-weight: bold;
+        border: none;
+        color: white;
+        box-shadow:1px 1px 5px black;
+    }
+</style>
+<body>
+    <center>
+    <div class="contact-form">
+        <form action="">
+            <table>
+                <caption><h2>CONTACT FORM</h2></caption>
+                <tr>
+                    <td><i class="fa-solid fa-user"></i></td>
+                    <td><input type="text" placeholder="Enter Your Name"></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-paper-plane"></i></td>
+                    <td><input type="emali" placeholder="Enter Your Email"><br></td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-envelope"></i></td>
+                    <td><textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button>SUBMIT</button></td>
+                </tr>
+            </table> 
+        </form>
+    </div>
+</center>
+</body>
+</html>

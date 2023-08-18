@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website | Template</title>
+    <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: rgb(43, 42, 42);
+        }
+        .header{
+            height: 100px;
+            background-color: rgb(43, 42, 42);
+            display: flex;
+        }
+        .logo{
+            height: inherit;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img{
+            border-radius: 50%;
+            height: 80px;
+            width: 80px;
+            object-fit: cover;
+            border: 2px solid gray;
+        }
+        .logo h3{
+            color: white;
+            margin-left: 20px;
+        }
+        .manubar{
+            height: inherit;
+            width: 80%;
+            display: flex;
+        }
+        ul{
+            display: flex;
+            list-style: none; 
+            height: inherit;
+            margin-top: 35px;
+            margin-left: 300px;
+        }
+        ul li {
+            padding: 0 20px;
+            height: inherit;
+            
+           
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+            
+        }
+        /* Main */
+        .main{
+            display: flex;
+            margin-top: 100px;
+        }
+        .content{
+            width: 50%;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        .content h1{
+            color: white;
+            margin-top: 20px;
+            font-size: 50px;
+            font-weight: 900;
+        }
+        .content h1 span{
+            color: red;
+           
+        }
+        .content p{
+            color: white;
+            opacity: 0.8;
+            font-weight: 300;
+        }
+        .content h2{
+            font-size: 35px;
+            color: white;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+        .content h2 span{
+            opacity: 0.2;
+            font-weight: 200;
+        }
+        .image_div{
+            width: 50%;
+            position: relative;
+        }
+        .image_div .back{
+            width: 300px;
+            height: 421px;
+            background-color: rgba(0, 0, 0, 0.218);
+            border: 1px solid gray;
+            position: absolute;
+            top: 100px;
+            left: 280px;
+            
+        }
+        .image_div img{
+            height: 520px;
+            position: absolute;
+            z-index: 1;
+            left: 280px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <img src="./images/profile.jpg" alt="">
+            <h3>INBIO</h3>
+        </div>
+        <div class="menubar">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">FEATURES</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">RESUME</a></li>
+                <li><a href="">CLIENTS</a></li>
+                <li><a href="">PRICE</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- main -->
+    <div class="main">
+        <div class="content">
+            <p>WELCOME TO MY WORLD</p>
+            <h1>Hi, I'm <span>Jone Lee</span></h1>
+            <h2>a Developer.<span>|</span></h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quis maxime non quos autem dolore molestiae nisi tempora, velit, ea qui expedita quia deleniti ducimus beatae! Nobis enim illo facere non exercitationem, ducimus hic aliquid laudantium in numquam amet voluptas ipsum aliquam unde minima sunt voluptates eos expedita minus corporis!</p>
+        </div>
+        <div class="image_div">
+            <img src="./images/hero1.png" alt="">
+            <div class="back"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sun animation</title>
+    <style>
+        .sun {
+            height: 300px;
+            width: 300px;
+            border-radius: 50%;
+            background-image:linear-gradient(yellow , white) ;
+            border: 1px solid yellow;
+            outline: 60px dashed navy;
+            outline-offset: 15px;
+            margin-top: 200px;
+        }
+
+        .sun:hover {
+            animation: sun 2s;
+        }
+        @keyframes sun {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+
+        <div class="sun"></div>
+    </center>
+
+</body>
+
+</html>

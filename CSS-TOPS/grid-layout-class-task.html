@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(28, 27, 27);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      main {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+      }
+      nav {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        background-color: black;
+        padding: 10px;
+      }
+      .navlink {
+        overflow: hidden;
+        height: 50px;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 5px;
+        background-color: rgb(95, 94, 94);
+        box-shadow: 1px 1px 10px rgb(95, 94, 94);
+      }
+      .navlink > h2 {
+        color: yellow;
+      }
+      .circle {
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        background-image: linear-gradient(gray, white);
+        position: absolute;
+        left: -50px;
+        top: -25px;
+      }
+      i {
+        font-size: 25px;
+        position: absolute;
+        left: 10px;
+        color: black;
+        z-index: 1;
+      }
+      h3 {
+        color: white;
+        margin-bottom: 10px;
+      }
+      p {
+        color: rgba(128, 128, 128, 0.577);
+      }
+      span {
+        color: yellow;
+      }
+      h6 {
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+      #parent-6 {
+        grid-column: 1/6;
+        grid-row: 1/3;
+        padding: 50px 30px;
+        margin-bottom: 50px;
+      }
+      #parent-6 > h1 {
+        color: white;
+        text-transform: capitalize;
+        margin-bottom: 15px;
+      }
+      #parent-6 > h1::before {
+        content: "";
+        border: 5px solid gray;
+        margin-right: 10px;
+        background-color: gray;
+      }
+      #parent-7 {
+        grid-column: 1/4;
+        grid-row: 2/5;
+        padding: 50px 30px;
+        /* position: relative; */
+      }
+      .image-div {
+        width: 100%;
+        height: 350px;
+        padding: 20px;
+        background-color: black;
+        position: relative;
+      }
+      .image-div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      #parent-8 {
+        grid-column: 4/6;
+        grid-row: 2/5;
+        padding: 50px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <div class="parent navlink" id="parent-1">
+          <i class="fa-solid fa-house"></i>
+          <div class="circle"></div>
+          <h2>home</h2>
+        </div>
+        <div class="parent navlink" id="parent-2">
+          <i class="fa-solid fa-user"></i>
+          <div class="circle"></div>
+          <h2>About</h2>
+        </div>
+        <div class="parent navlink" id="parent-3">
+          <i class="fa-solid fa-suitcase"></i>
+          <div class="circle"></div>
+          <h2>Portfolio</h2>
+        </div>
+        <div class="parent navlink" id="parent-4">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <div class="circle"></div>
+          <h2>Services</h2>
+        </div>
+        <div class="parent navlink" id="parent-5">
+          <i class="fa-solid fa-envelope"></i>
+          <div class="circle"></div>
+          <h2>Contact</h2>
+        </div>
+      </nav>
+      <main>
+        <div class="parent" id="parent-6">
+          <h1>Welcome to Simple grid theme</h1>
+        </div>
+        <div class="parent" id="parent-7">
+          <div class="image-div"><img src="./images/nature.jpg" alt="" /></div>
+          <h6>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat ex
+            quis vel eius molestiae laboriosam molestias atque quia accusantium
+            sequi, consequuntur corrupti esse dolores ducimus.
+          </h6>
+          <p>
+            <span>Lorem ipsum</span> dolor sit amet consectetur adipisicing
+            elit. A ipsum <span>fugiat accusantium</span> ab quae. Quis eligendi
+            sunt ipsam eveniet, illum iure repellendus, voluptatibus
+            reprehenderit corporis eius hic eum modi vitae nobis! Perspiciatis
+            sunt autem reiciendis, accusantium ut animi distinctio nostrum,
+            quisquam, non delectus nihil! In impedit dolorem quo minima
+            consequatur inventore, voluptatibus quasi possimus atque tempore id
+            aliquam, optio deleniti, ducimus voluptas totam. Vel ex totam
+            aliquam repudiandae quia tenetur possimus voluptates aliquid
+            accusamus dolor harum, maxime consequuntur illum aperiam
+            voluptatibus dolore cupiditate odio ipsam provident laborum.
+            Architecto laborum, dicta neque itaque voluptatum quisquam eius vero
+            optio nihil quo in!
+          </p>
+          <br /><br />
+          <h3>Our Services Lists</h3>
+          <p>
+            i) Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+            eligendi.
+          </p>
+          <br />
+          <p>
+            ii) Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+            eligendi.
+          </p>
+          <br />
+          <p>
+            iii) Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+            eligendi.
+          </p>
+          <br />
+          <p>
+            iv) Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+            eligendi.
+          </p>
+          <br />
+          <p>
+            v) Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+            eligendi.
+          </p>
+          <br />
+        </div>
+        <div class="parent" id="parent-8">
+          <h3>Testimonials</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Repellendus quidem vitae magnam quasi nihil officia fuga, ducimus,
+            consectetur minus nesciunt molestiae unde, eveniet nisi debitis
+            nobis ullam praesentium dolorem qui obcaecati enim iste sunt iusto
+            quis! Rerum consequatur accusantium autem distinctio praesentium
+            cupiditate quidem! Ipsum ad placeat id perferendis explicabo.
+          </p>
+          <br />
+          <p><span>Lorem ipsum</span> - dolor sit amet.</p>
+          <br /><br />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Voluptates, placeat tempore ducimus molestias illum, ad dignissimos
+            ut perspiciatis laudantium, odit labore ab optio maiores magni quae?
+            Quod itaque eaque reprehenderit molestiae consequuntur expedita
+            labore nihil! Eveniet natus, aspernatur vitae modi blanditiis quia
+            commodi repudiandae? Voluptatem vitae quae ex quaerat ducimus.
+          </p>
+          <br />
+          <p><span>Lorem ipsum</span> - dolor sit amet.</p>
+          <br /><br />
+          <h3>Twitter</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+            recusandae quidem. Nulla atque adipisci maiores dolorem molestias
+            voluptates ipsa quisquam?
+          </p>
+          <span>Lorem ipsum dolor sit amet consectetur.</span><br /><br />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+            voluptatem earum assumenda aperiam beatae itaque odio dolores
+            voluptatibus, magni natus!
+          </p>
+          <span>Lorem ipsum dolor sit amet consectetur.</span><br /><br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, ad.
+            Totam quis odio culpa natus possimus unde tempora laboriosam sunt,
+            eos accusamus consectetur quae eaque? Nobis labore obcaecati
+            architecto autem.
+          </p>
+          <span>Lorem</span><br /><br />
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

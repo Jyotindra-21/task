@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Website | Template</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Head section */
+        .head {
+            height: 50px;
+            background-color: rgb(1, 1, 64);
+            display: flex;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: inherit;
+            color: white;
+        }
+
+        .logo i {
+            color: blue;
+        }
+
+        .navigation {
+            height: inherit;
+            width: 80%;
+        }
+
+        .navigation ul {
+            display: flex;
+            list-style: none;
+            height: inherit;
+            font-weight: 700;
+        }
+
+        .navigation ul li {
+            padding: 0px 30px;
+            height: inherit;
+            align-items: center;
+            display: flex;
+        }
+
+        .navigation ul li:first-child {
+            background-color: rgb(0, 0, 21);
+        }
+
+        .navigation ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* capabilities */
+        h3.cap {
+            background-color: blue;
+            padding: 20px 0;
+            color: white;
+        }
+
+        h3.project {
+            background-color: #f2f2f2;
+            padding: 20px 0;
+            color: black;
+        }
+
+        h3.news {
+            background-color: white;
+            padding: 20px 0;
+            color: black;
+        }
+
+        .capabilities {
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+        }
+
+        .capabilities-child {
+            width: 20%;
+        }
+
+        .capabilities-child i {
+            font-size: 50px;
+            color: rgb(1, 1, 64);
+        }
+
+        .capabilities-child {
+            color: white;
+            padding: 30px 0;
+        }
+
+        .capabilities-child p {
+            opacity: .8;
+        }
+
+        .capabilities-child button {
+            background-color: white;
+            padding: 2px 10px;
+            border: none;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        /* Recent Project */
+        .recent-project {
+            display: flex;
+            justify-content: center;
+            background-color: #f2f2f2;
+            padding: 20px 0;
+        }
+
+        .projects {
+            width: 20%;
+            margin: 0 10px;
+            border-radius: 10px;
+            background-color: blue;
+        }
+
+        .image_content {
+            padding: 15px;
+            color: white;
+        }
+
+        .image_content p {
+            opacity: 0.8;
+        }
+
+        .projects img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+        }
+
+        /* Latest News */
+        .latest-news {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            padding: 20px 0;
+        }
+        .all-news{
+            width: 20%;
+            margin: 0 10px;
+        }
+        .all-news h5{
+            margin-bottom: 20px;
+        }
+        .all-news a{
+            color: deepskyblue;
+        }
+        .all-news p{
+            margin-top: 20px;
+            opacity: 0.8;
+        }
+        /* Client  */
+        .client{
+            display: flex;
+            justify-content: center;
+            background-color: blue;
+        }
+        .client img{
+            width: 20%;
+            padding: 25px 20px;
+        }
+        /* footer */
+        .footer{
+            display: flex;
+            height: 100px;
+            background-color: rgb(1, 1, 64);
+            justify-content: space-between;
+            padding: 0 50px;
+            align-items: center;
+        }
+        .footer h4{
+            color: white;
+            opacity: 0.6;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Head section -->
+    <div class="head">
+        <div class="logo">
+            <h2><i class="fa-brands fa-docker"></i> iBuild</h2>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#upload"><i class="fa-solid fa-download"></i> Upload</a></li>
+                <li><a href="#view"><i class="fa-solid fa-eye"></i> View</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="#cancel"><i class="fa-solid fa-circle-xmark"></i> Cancel</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- capabilities section -->
+    <div class="main">
+        <!-- Capabilities -->
+        <center>
+            <h3 class="cap">Our Capabilities</h3>
+        </center>
+        <div class="capabilities">
+            <div class="capabilities-child">
+                <center>
+                    <i class="fa-solid fa-people-roof"></i>
+                    <h2>Project Management</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, odit.</p>
+                    <button>Apply</button>
+                </center>
+            </div>
+            <div class="capabilities-child">
+                <center>
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <h2>Innovation and Diversity</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, odit.</p>
+                    <button>Apply</button>
+                </center>
+            </div>
+            <div class="capabilities-child">
+                <center>
+                    <i class="fa-brands fa-discord"></i>
+                    <h2>A Professional Approach</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, odit.</p>
+                    <button>Apply</button>
+                </center>
+            </div>
+            <div class="capabilities-child">
+                <center>
+                    <i class="fa-brands fa-github"></i>
+                    <h2>A Sustanable Future</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, odit.</p>
+                    <button>Apply</button>
+                </center>
+            </div>
+        </div>
+        <!-- Recent Project -->
+        <center>
+            <h3 class="project">Recent Projects</h3>
+        </center>
+        <div class="recent-project">
+            <div class="projects">
+                <img src="./images/p1.jpg" alt="">
+                <div class="image_content">
+                    <h4>IMAGE TITLE</h4>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="./images/p1.jpg" alt="">
+                <div class="image_content">
+                    <h4>IMAGE TITLE</h4>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="./images/p1.jpg" alt="">
+                <div class="image_content">
+                    <h4>IMAGE TITLE</h4>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="./images/p1.jpg" alt="">
+                <div class="image_content">
+                    <h4>IMAGE TITLE</h4>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Latest News -->
+        <center>
+            <h3 class="news">Latest News</h3>
+        </center>
+        <div class="latest-news">
+            <div class="all-news">
+                <h5>News Title</h5>
+                <a href="link">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti consequuntur repellendus necessitatibus libero, explicabo sequi neque enim eos. Ad!</p>
+            </div>
+            <div class="all-news">
+                <h5>News Title</h5>
+                <a href="link">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti consequuntur repellendus necessitatibus libero, explicabo sequi neque enim eos. Ad!</p>
+            </div>
+            <div class="all-news">
+                <h5>News Title</h5>
+                <a href="link">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti consequuntur repellendus necessitatibus libero, explicabo sequi neque enim eos. Ad!</p>
+            </div>
+            <div class="all-news">
+                <h5>News Title</h5>
+                <a href="link">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti consequuntur repellendus necessitatibus libero, explicabo sequi neque enim eos. Ad!</p>
+            </div>
+        </div>
+        <!-- our client -->
+        <center>
+            <h3 class="cap">Our Clients</h3>
+        </center>
+        <div class="client">
+            <img src="./images/logo.png" alt="">
+            <img src="./images/logo.png" alt="">
+            <img src="./images/logo.png" alt="">
+            <img src="./images/logo.png" alt="">
+        </div>
+
+        <div class="footer">
+            <h4>Lorem, ipsum dolor.</h4>
+            <h4>Lorem, ipsum dolor.</h4>
+        </div>
+    </div>
+</body>
+
+</html>

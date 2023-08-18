@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Task</title>
+    <style>
+        div{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px 10px;
+            /* margin-top: 20px; */
+        }
+        .main{
+            margin-top: 20px;
+        }
+        .one{
+            padding: 80px;
+            border: 2px solid black;
+        }
+        #two1{
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        #two2{
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        #two6{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="one" id="two1">1</div>
+        <div class="one" id="two2">2</div>
+        <div class="one" id="two3">3</div>
+        <div class="one" id="two4">4</div>
+        <div class="one" id="two5">5</div>
+        <div class="one" id="two6">6</div>
+        <div class="one" id="two7">7</div>
+        <div class="one" id="two8">8</div>
+    </div>
+</body>
+</html>
