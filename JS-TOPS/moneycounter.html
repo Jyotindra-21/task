@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Counter</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        /* Firefox */
+        /* input[type=number] {
+            -moz-appearance: textfield;
+        } */
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        /* Table Start */
+        .main {
+            background-color: slateblue;
+            height: 100vh;
+        }
+
+        table {
+            width: 100vw;
+            height: calc(100vh - h1);
+            border: 2px solid black;
+            width: 80%;
+            margin: auto;
+            background-color: white;
+            border-collapse: collapse;
+        }
+
+        table td {
+            width: 20%;
+            text-align: center;
+        }
+
+        tbody>tr>td {
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            height: 65px;
+            /* width: 100px; */
+        }
+
+        tbody>tr:nth-child(odd) {
+            background-color: rgba(128, 128, 128, 0.059);
+        }
+
+        tbody>tr>td:first-child {
+            font-size: 20px;
+            font-weight: bold;
+            color: purple;
+            text-align: center;
+
+        }
+
+        tbody>tr>td>input[type="number"] {
+            border: none;
+            border-bottom: 2px solid gray;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: teal;
+        }
+
+        tbody>tr>td>input[type="number"]:focus {
+            outline: none;
+        }
+        thead>tr>th {
+            color: navy;
+            background-color: rgba(128, 128, 128, 0.341);
+            padding: 5px;
+            text-transform: uppercase;
+        }
+        tfoot>tr>td>h4 {
+            font-size: 30px;
+            text-transform: uppercase;
+        }
+        #total {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>MONEY COUNTER</h1>
+        <div class="wraper">
+            <div class="notes">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>NOTE VALUE</th>
+                            <th>Type Number</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">
+                                <h4 class="total-title">Total</h4>
+                            </td>
+                            <td>
+                                <h4 id="total">0</h4>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        // notes array
+        var notes = [2000, 500, 200, 100, 50, 10, 5, 2, 1];
+        var notesBg = ["https://img.freepik.com/premium-vector/indian-2000-rupee-currency-note-vector-illustration_667085-284.jpg?w=2000", "https://img.freepik.com/premium-vector/indian-500-rupee-note-vector-illustration_667085-286.jpg", "https://img.freepik.com/premium-vector/indian-200-rupee-note-vector-illustration_667085-285.jpg?w=2000", "https://img.freepik.com/premium-vector/indian-100-rupee-currency-note-vector-illustration_667085-283.jpg?w=2000", "https://img.freepik.com/premium-vector/indian-50-rupee-currency-note-vector-illustration_667085-287.jpg?w=2000", "https://img.freepik.com/premium-vector/banknote-ten-indian-rupees-indian-rupee-banknote-illustration_687198-130.jpg?w=2000", "https://media.istockphoto.com/id/1440529487/vector/five-rupees-coin-of-india-coin-side-isolated-on-white-background-vector.jpg?s=612x612&w=0&k=20&c=L95FRqULFp1F7v2cmR714NBdv4YEZbbGMh8sGkGCS9g=", "https://s3.amazonaws.com/ngccoin-production/world-coin-price-guide/369938f.jpg", "https://img.freepik.com/premium-vector/one-rupee-coin-india-back-side-isolated-white-background_687198-92.jpg"]
+        var result = 0
+        // for loop for structure print of html
+        for (let i = 0; i < notes.length; i++) {
+            document.getElementById("tbody").innerHTML += `<tr><td style="background-image: url(${notesBg[i]});">${notes[i]}</td><td><input onkeyup="count()" type="number" placeholder="Type Number" id="note-${i}"></td><td><h2 id="result-${i}">${result}</h2></td></tr>`
+        }
+        // count function run when keyup on input
+        function count() {
+            var total = 0;
+            for (let j = 0; j < notes.length; j++) {
+                var counting = document.getElementById(`note-${j}`).value;
+                var answer = document.getElementById(`result-${j}`).innerHTML = notes[j] * counting;
+                if (answer != 0) {
+                    total = answer + total;
+                }
+            }
+            // after loop finish total print 
+            document.getElementById("total").innerHTML = total
+        }
+    </script>
+</body>
+</html>

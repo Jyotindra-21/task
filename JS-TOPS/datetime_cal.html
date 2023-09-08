@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | Datetime</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    table{
+        margin: auto;
+        /* column-gap: 20px; */
+    }
+    table tr  td{
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    input[type="date"]{
+        padding: 5px 10px;
+        margin: 10px;
+        font-size: 25px;
+    }
+    input[type="button"]{
+        border: none;
+        padding: 10px 20px;
+        background-color: blueviolet;
+        color: white;
+        font-size: 20px;
+        border-radius: 5px;
+        margin-top:20px ;
+    }
+    #result{
+        font-size: 25px;
+        background-color: black;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+</style>
+
+<body>
+    <fieldset>
+        <legend align="center">Date Interval</legend>
+        <table>
+            <!-- FROM -->
+            <tr>
+                <td>FROM :</td>
+                <td><input type="date" id="fromDate"></td>
+            </tr>
+            <!-- TO -->
+            <tr>
+                <td>TO :</td>
+                <td><input type="date" id="toDate"></td>
+            </tr>
+            <!-- button -->
+            <tr align="center">
+                <td colspan="2"><input type="button" value="calculator" onclick="dateCalculator()"></td>
+            </tr>
+            <!-- result -->
+            <tr>
+                <td colspan="2">
+                    <div id="result" class="alert" style="display: none;"></div>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <script>
+        function dateCalculator() {
+
+            var fromDate = new Date(document.getElementById("fromDate").value);
+            var toDate = new Date(document.getElementById("toDate").value);
+            if (isNaN(fromDate) || isNaN(toDate)) {
+                alert("please select valid dates !");
+                return;
+            }
+            var Timediff = toDate.getTime() - fromDate.getTime();
+            var DayDiff = Math.ceil(Timediff / (1000 * 3600 * 24));
+            var WeeksDiff = Math.ceil(DayDiff / 7);
+            var MonthDiff = (toDate.getMonth() + 1) - (fromDate.getMonth() + 1) + (toDate.getFullYear() - fromDate.getFullYear()) * 12;
+            var YearDiff = toDate.getFullYear() - fromDate.getFullYear();
+            var result = document.getElementById("result");
+            result.innerHTML = `Date interval between <br> ${fromDate.toDateString()} and ${toDate.toDateString()} <hr><hr> In Years : ${YearDiff} <br> In Months : ${MonthDiff} <br> In Weeks : ${WeeksDiff} <br> In days : ${DayDiff} <hr><hr>`;
+            result.style.display = "block"
+        }
+
+
+        // var a  = 10
+        // var b = a
+        // var b = b + a
+        // console.log(a);
+        // console.log(b);
+        // console.log(c);
+    </script>
+</body>
+
+</html>

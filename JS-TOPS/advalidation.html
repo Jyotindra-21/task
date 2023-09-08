@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Form Validation</title>
+</head>
+
+<body>
+
+    <form method="post" action="" autocomplete="on" onsubmit="return filedIsBlank()">
+        <table border="1" align="center">
+            <tr>
+                <td>Name :</td>
+                <td>
+                    <input onblur="validData(this,'nameerror')" onkeydown="validName(this , 'nerror')" type="text"
+                        name="name" id="name">
+                    <span id="nameerror"></span>
+                    <span id="nerror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td><input type="email" name="email" value="" id="email" onblur="validData(this,'emailerror')"
+                        onkeydown="validEmail(this , 'eerror')">
+                    <span id="emailerror"></span>
+                    <span id="eerror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" name="password" id="password" onblur="validData(this,'pwderror')"
+                        onkeydown="validpwd(this , 'perror')">
+
+                    <span id="pwderror"></span>
+                    <span id="perror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Mobile :</td>
+                <td><input type="tel" name="mobile" id="mobile" onblur="validData(this,'mobileerror')"
+                        onkeydown="validmobile(this , 'merror')">
+                    <span id="mobileerror"></span>
+                    <span id="merror"></span>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><input type="submit" name="submit" id="submit" value="submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+
+        function filedIsBlank() {
+            var name = document.getElementById("name");
+            console.log(name)
+            if (name.value == "") {
+                validData(name, "nameerror")
+                return false
+            }
+            var email = document.getElementById("email");
+            if (email.value == "") {
+                validData(email, 'emailerror')
+                return false
+            }
+            var password = document.getElementById("password");
+            if (password.value == "") {
+                validData(password, 'pwderror')
+                return false
+            }
+            var mobile = document.getElementById("mobile");
+            if (mobile.value == "") {
+                validData(mobile, 'mobileerror')
+                return false
+            }
+        }
+
+        function validData(input, msg) {
+            if (input.value == "") {
+                document.getElementById(msg).style.color = "red"
+                document.getElementById(msg).innerText = "Filed can not be blank!"
+                return false;
+            }
+            else {
+                document.getElementById(msg).innerText = "";
+                return true
+            }
+        }
+        function validName(input, msg) {
+            var name = /^[a-zA-Z]+$/
+            if (name.test(input.value)) {
+                document.getElementById(msg).innerText = "";
+                return true;
+            } else {
+                document.getElementById(msg).style.color = "red";
+                document.getElementById(msg).innerText = "Please Enter only Character"
+                return false
+            }
+        }
+        function validEmail(input, msg) {
+            var email = /^([a-z0-9.-_])+@+([a-z0-9-._]).([a-z]{3})/
+            if (email.test(input.value)) {
+                document.getElementById(msg).innerText = "";
+                return true;
+            } else {
+                document.getElementById(msg).style.color = "red";
+                document.getElementById(msg).innerText = "Please Enter valid Email!"
+                return false
+            }
+        }
+
+        function validpwd(input, msg) {
+
+            var pwd = /^[a-zA-Z0-9.-]{3,5}$/
+            if (pwd.test(input.value)) {
+                document.getElementById(msg).innerText = "";
+                return true;
+            } else {
+                document.getElementById(msg).style.color = "red";
+                document.getElementById(msg).innerText = "Please Enter  valid password"
+                return false
+            }
+        }
+        function validmobile(input, msg) {
+            var mobile = /^[0-9]{10}$/
+            if (mobile.test(input.value)) {
+                document.getElementById(msg).innerText = "";
+                return true;
+            } else {
+                document.getElementById(msg).style.color = "red";
+                document.getElementById(msg).innerText = "Please Enter Valid mobile"
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>

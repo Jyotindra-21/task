@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAYOUT </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            /* background-color: gray; */
+        }
+        .main{
+            padding: 2vh 10vw;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .child{
+            /* border: 2px solid black; */
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            background-color: white;
+        }
+        .child>.image-sec{
+            height: 60%;
+            background-color: gray;
+        }
+        .bottom-sec{
+            height: 40%;
+            padding: 10px 20px;
+            position: relative;
+        }
+        .bottom-sec>p{
+            padding: 5px 0;
+            position: absolute;
+            bottom: 50px;
+        }
+        .btn-right{
+            background-color: gray;
+            width: 101px;
+            height: 21px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .btn-right>button{
+            margin: 0;
+            width: 49px;
+            height: 19px;
+            padding: 2px 10px;
+            border: none;
+            background-color: white;
+        }
+        .bottom-btn{
+            width: 90%;
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn-left>a{
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="child">
+            <div class="image-sec"></div>
+            <div class="bottom-sec">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat mollitia natus facere assumenda deserunt nostrum odio labore illum tempore praesentium.</p>
+                <div class="bottom-btn">
+                    <div class="btn-right">
+                        <button>View</button>
+                        <button>Edit</button>
+                    </div>
+                    <div class="btn-left">
+                        <a href="">show more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="child">
+            <div class="image-sec"></div>
+            <div class="bottom-sec">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat mollitia natus facere assumenda deserunt nostrum odio labore illum tempore praesentium.</p>
+                <div class="bottom-btn">
+                    <div class="btn-right">
+                        <button>View</button>
+                        <button>Edit</button>
+                    </div>
+                    <div class="btn-left">
+                        <a href="">show more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="child">
+            <div class="image-sec"></div>
+            <div class="bottom-sec">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat mollitia natus facere assumenda deserunt nostrum odio labore illum tempore praesentium.</p>
+                <div class="bottom-btn">
+                    <div class="btn-right">
+                        <button>View</button>
+                        <button>Edit</button>
+                    </div>
+                    <div class="btn-left">
+                        <a href="">show more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="child">
+            <div class="image-sec"></div>
+            <div class="bottom-sec">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat mollitia natus facere assumenda deserunt nostrum odio labore illum tempore praesentium.</p>
+                <div class="bottom-btn">
+                    <div class="btn-right">
+                        <button>View</button>
+                        <button>Edit</button>
+                    </div>
+                    <div class="btn-left">
+                        <a href="">show more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="child">
+            <div class="image-sec"></div>
+            <div class="bottom-sec">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat mollitia natus facere assumenda deserunt nostrum odio labore illum tempore praesentium.</p>
+                <div class="bottom-btn">
+                    <div class="btn-right">
+                        <button>View</button>
+                        <button>Edit</button>
+                    </div>
+                    <div class="btn-left">
+                        <a href="">show more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="child">
+            <div class="image-sec"></div>
+            <div class="bottom-sec">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat mollitia natus facere assumenda deserunt nostrum odio labore illum tempore praesentium.</p>
+                <div class="bottom-btn">
+                    <div class="btn-right">
+                        <button>View</button>
+                        <button>Edit</button>
+                    </div>
+                    <div class="btn-left">
+                        <a href="">show more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

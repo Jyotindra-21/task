@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS WAVES | https://getwaves.io/</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #main {
+            width: 100%;
+            height: 100vh;
+            background-image: url("./images/img1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parent {
+            height: inherit;
+            width: 100%;
+            background-color: rgba(32, 32, 32, 0.8);
+        }
+
+        .child {
+            height: inherit;
+            width: 100%;
+            position: relative;
+        }
+
+        .child svg {
+            object-fit: cover;
+            position: absolute;
+            bottom: 0;
+            opacity: 1;
+            background-image: url("./images/img2.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: top 1%;
+
+        }
+
+        .circle {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            outline: 3px solid #e74d3c;
+            z-index: 2;
+        }
+
+        #circle-1 {
+            top: 65%;
+            left: 20%;
+        }
+
+        #circle-big-1 {
+            position: absolute;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            overflow: hidden;
+            outline: 3px solid #e74d3c;
+            z-index: 2;
+            top: 58%;
+            left: 35%;
+        }
+
+        #circle-2 {
+            top: 60%;
+            left: 50%;
+        }
+
+        #circle-3 {
+            top: 63%;
+            left: 65%;
+        }
+
+        #circle-4 {
+            top: 56%;
+            left: 80%;
+        }
+
+        .cb-hr {
+            position: absolute;
+            height: 68px;
+            opacity: 0.749;
+            background-color: #45576e;
+            width: 1px;
+            top: 68.5%;
+            left: 37.3%;
+        }
+
+        .active {
+            filter: drop-shadow(-4.33px 2.5px 7.5px #000000);
+        }
+
+        .cover {
+            background-color: rgba(231, 76, 60, 0.502);
+            width: 100%;
+            position: absolute;
+            height: inherit;
+        }
+
+        /* HEADING PART */
+        .heading-sec {
+            padding-top: 10%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .heading-sec>h1 {
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+
+        .heading-sec>h5 {
+            color: rgba(255, 255, 255, 0.76);
+            text-align: center;
+            font-weight: 200;
+            font-size: 16px;
+
+
+        }
+
+        .point {
+            height: 10px;
+            width: 10px;
+            background-color: #e74d3c;
+            border-radius: 50%;
+            margin: auto;
+        }
+
+        .underline-div>hr {
+            width: 100px;
+        }
+
+        .underline-div {
+            width: 250px;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            gap: 10px;
+        }
+        .dev-desc{
+            position: absolute;
+            text-align: center;
+            top: 80%;
+            left: 31%;
+        }
+        .dev-desc>h2 {
+            font-size: 24px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        .dev-desc>h3 {
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 24px;
+            color: #ffffff;
+            font-weight: 400;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div class="parent">
+            <div class="child">
+                <div class="heading-sec">
+                    <h1>OUR TEAM</h1>
+                    <h5>Meet the craziest team. Share your thoughts with them.</h5>
+                    <div class="underline-div">
+                        <hr>
+                        <div class="point">
+                        </div>
+                        <hr>
+
+                    </div>
+                </div>
+                <div class="dev-desc">
+                    <h2>WEB DESIGNER</h2>
+                    <h3>UI/UX Designer</h3>
+                </div>
+                <div class="active" id="circle-big-1">
+                    <div class="cover"></div>
+                    <img src="./images/p5.png" alt="">
+                </div>
+                <hr class="cb-hr">
+                <div class="circle" id="circle-1">
+                    <img src="./images/p1.png" alt="">
+                </div>
+                <div class="circle" id="circle-2">
+                    <img src="./images/p2.png" alt="">
+                </div>
+                <div class="circle" id="circle-3">
+                    <img src="./images/p3.png" alt="">
+                </div>
+                <div class="circle" id="circle-4">
+                    <img src="./images/p4.png" alt="">
+                </div>
+                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1928 652" width="100%" height="519">
+                    <style>
+                        .a {
+                            opacity: .1;
+                            fill: #e74d3c
+                        }
+                    </style>
+                    <path class="a"
+                        d="m1922 3c-14.5 49.8-351.5 452.6-828 342-476.5-110.6-1094 169-1094 169v137.5h1920c0 0 16.5-698.3 2-648.5z" />
+                </svg>
+            </div>
+        </div>
+
+    </div>
+
+</html>

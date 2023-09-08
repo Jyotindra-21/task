@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+
+<body>
+
+    <form method="post" action="" onsubmit="return ValidData()">
+        <table border="1" align="center">
+            <tr>
+                <td>Name :</td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td>Email :</td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td>Mobile :</td>
+                <td><input type="tel" name="mobile" id="mobile"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2"><input type="submit" name="submit" id="submit" value="submit"></td>
+            </tr>
+        </table>
+    </form>
+
+    <script>
+        function ValidData() {
+            var name = document.getElementById("name").value;
+            if (name == "") {
+                alert("Please enter name !");
+                document.getElementById("name").focus();
+                return false;
+            }
+            var email = document.getElementById("email").value;
+            if (email == "") {
+                alert("Please enter email !");
+                document.getElementById("email").focus();
+                return false;
+            }
+            var password = document.getElementById("password").value;
+            if (password == "") {
+                alert("Please enter password !");
+                document.getElementById("password").focus();
+                return false;
+            }
+            var mobile = document.getElementById("mobile").value;
+            if (mobile == "") {
+                alert("Please enter mobile !");
+                document.getElementById("mobile").focus();
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: teal;
+        }
+
+        #main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .screen {
+            height: 150px;
+            width: 500px;
+            background-color: white;
+            /* border: 2px solid black; */
+        }
+
+        .screen h1#input-values {
+            padding: 20px 10px;
+            display: flex;
+            justify-content: end;
+            font-size: 35px;
+        }
+
+        .screen h2#result {
+            padding: 5px 10px;
+            display: flex;
+            font-size: 25px;
+            color: black;
+            opacity: 0.8;
+            justify-content: end;
+        }
+
+        .buttons {
+            width: 500px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(20, 20px);
+        }
+
+        button {
+            border: none;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            background-color: black;
+        }
+
+        button:hover {
+            background-color: black;
+            opacity: 0.8;
+
+        }
+
+        button.oparation {
+            background-color: gray;
+        }
+
+        .b7 {
+            grid-column: 1/2;
+            grid-row: 1/6;
+        }
+
+        .b8 {
+            grid-column: 2/3;
+            grid-row: 1/6;
+        }
+
+        .b9 {
+            grid-column: 3/4;
+            grid-row: 1/6;
+        }
+
+        .bdel {
+            grid-column: 4/5;
+            grid-row: 1/5;
+        }
+
+        .b4 {
+            grid-column: 1/2;
+            grid-row: 6/11;
+        }
+
+        .b5 {
+            grid-column: 2/3;
+            grid-row: 6/11;
+        }
+
+        .b6 {
+            grid-column: 3/4;
+            grid-row: 6/11;
+        }
+
+        .bdived {
+            grid-column: 4/5;
+            grid-row: 5/10;
+        }
+
+        .b1 {
+            grid-column: 1/2;
+            grid-row: 11/16;
+        }
+
+        .b2 {
+            grid-column: 2/3;
+            grid-row: 11/16;
+        }
+
+        .b3 {
+            grid-column: 3/4;
+            grid-row: 11/16;
+        }
+
+        .bmulti {
+            grid-column: 4/5;
+            grid-row: 10/14;
+        }
+
+        .bsub {
+            grid-column: 4/5;
+            grid-row: 14/18;
+        }
+
+        .bdot {
+            grid-column: 1/2;
+            grid-row: 16/21;
+        }
+
+        .b0 {
+            grid-column: 2/3;
+            grid-row: 16/21;
+        }
+
+        .bequal {
+            grid-column: 3/4;
+            grid-row: 16/21;
+        }
+
+        .badd {
+            grid-column: 4/5;
+            grid-row: 18/21;
+        }
+
+        /* .mousefollower {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+        } */
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <!-- <div class="mousefollower"></div> -->
+        <div class="screen">
+            <h1 id="input-values"></h1>
+            <h2 id="result"></h2>
+        </div>
+        <div class="buttons">
+            <button onclick="getvalue(this.value)" id="btn-7" class="b7" value="7">7</button>
+            <button onclick="getvalue(this.value)" id="btn-8" class=" b8" value="8">8</button>
+            <button onclick="getvalue(this.value)" id="btn-9" class=" b9" value="9">9</button>
+            <button onclick="getvalue(this.value)" id="btn-delete" class="oparation bdel" value="delete">DEL</button>
+            <button onclick="getvalue(this.value)" id="btn-4" class=" b4" value="4">4</button>
+            <button onclick="getvalue(this.value)" id="btn-5" class=" b5" value="5">5</button>
+            <button onclick="getvalue(this.value)" id="btn-6" class=" b6" value="6">6</button>
+            <button onclick="getvalue(this.value)" id="btn-/" class="oparation bdived" value="/">/</button>
+            <button onclick="getvalue(this.value)" id="btn-1" class=" b1" value="1">1</button>
+            <button onclick="getvalue(this.value)" id="btn-2" class=" b2" value="2">2</button>
+            <button onclick="getvalue(this.value)" id="btn-3" class=" b3" value="3">3</button>
+            <button onclick="getvalue(this.value)" id="btn-*" class="oparation bmulti" value="*">x</button>
+            <button onclick="getvalue(this.value)" id="btn--" class="oparation bsub" value="-">-</button>
+            <button onclick="getvalue(this.value)" id="btn-." class=" bdot" value=".">.</button>
+            <button onclick="getvalue(this.value)" id="btn-0" class=" b0" value="0">0</button>
+            <button onclick="getvalue(this.value)" id="btn-=" class=" bequal" value="=">=</button>
+            <button onclick="getvalue(this.value)" id="btn-+" class=" oparation badd" value="+">+</button>
+        </div>
+    </div>
+    <script>
+        var allval = "";
+        // var result = "";
+        var operation = "";
+        var preval = "";
+        function getvalue(inputValue) {
+            if (inputValue == "-" || inputValue == "+" || inputValue == "/" || inputValue == "*") {
+                if (operation != "") {
+                    allval = allval
+                } else if (allval == "") {
+                    allval = ""
+                } else {
+                    operation = inputValue;
+                    preval = allval;
+                    allval = allval + inputValue;
+                }
+            } else if (inputValue == ".") {
+                allval = allval + inputValue;
+            } else if (inputValue == "delete") {
+                if (operation != "") {
+                    allval = preval
+                    operation = ""
+                } else {
+                    allval = Math.floor(allval / 10)
+                }
+                if (allval == "0") {
+                    allval = "";
+                }
+            } else if (inputValue == "=") {
+                var res = allval.split(operation)
+                switch (operation) {
+                    case "/":
+                        allval = res[0] / res[1];
+                        operation = "";
+                        break;
+                    case "+":
+                        allval = parseInt(res[0]) + parseInt(res[1]);
+                        operation = "";
+                        break;
+                    case "-":
+                        allval = res[0] - res[1];
+                        operation = "";
+                        break;
+                    case "*":
+                        allval = res[0] * res[1];
+                        operation = "";
+                        break;
+                    default:
+                        break;
+                        console.log("invalid")
+                }
+
+            } else if (inputValue == "0") {
+                if (allval == "") {
+                    allval == ""
+                } else {
+                    allval = allval + inputValue;
+                }
+            } else {
+                allval = allval + inputValue;
+            }
+            document.getElementById("input-values").innerHTML = allval
+            // document.getElementById("result").innerHTML = result
+        }
+        // var mfollower = document.querySelector(".mousefollower");
+        // document.querySelector("#main").addEventListener("mousemove", function(dets) {
+        //     mfollower.style.left = dets.x+"px"
+        //     mfollower.style.top = dets.y+"px"
+        // })
+    </script>
+</body>
+
+</html>

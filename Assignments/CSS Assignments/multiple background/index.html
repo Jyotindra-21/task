@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Multiple background side by side</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main {
+        height: 100vh;
+        width: 100vw;
+        background-color: #202020;
+        background-image: url("1.png");
+        background-repeat: no-repeat;
+        background-position: 55vw top;
+        background-size: contain;
+      }
+      .ous-services {
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: end; */
+        align-items: flex-end;
+        padding: 100px 20px;
+        gap: 45px;
+        position: relative;
+      }
+      .ous-services h1 {
+        text-transform: uppercase;
+        color: white;
+      }
+      .ous-services h1::after {
+        content: "";
+        border: 4px solid #e74c3c;
+        margin-left: 15px;
+      }
+      .services > h4{
+        color: #e74c3c;
+        text-align: end;
+        margin-bottom: 10px;
+      }
+      .services > p {
+        color: white;
+        text-align: end;
+        line-height: 30px;
+        width: 40vw;
+      }
+      .icons{
+        position: absolute;
+        top: 30%;
+        left: 107%;
+      }
+      .icons>ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    
+      }
+      .icons>ul>li{
+        height: 50px;
+        width: 50px;
+        display: flex;
+        outline: 6px solid rgba(255,255,255, 0.252);
+        /* border: 5px solid black; */
+        color: #e74c3c;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="ous-services">
+        <h1>our services</h1>
+        <div class="services">
+          <h4>WEB DESIGN</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
+            ratione adipisci delectus maxime accusamus eveniet repellendus
+            architecto, veniam dolorem magni reprehenderit 
+          </p>
+        </div>
+        <div class="services">
+            <h4>PRINT DESIGN</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
+              ratione adipisci delectus maxime accusamus eveniet repellendus
+              architecto, veniam dolorem magni reprehenderit 
+            </p>
+          </div>
+          <div class="services">
+            <h4>PHOTOGRAPHY</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
+              ratione adipisci delectus maxime accusamus eveniet Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="icons">
+            <ul>
+                <li><i class="fa-solid fa-tv"></i></li>
+                <li><i class="fa-solid fa-book"></i></li>
+                <li><i class="fa-solid fa-camera"></i></li>
+            </ul>
+            
+            
+            
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
