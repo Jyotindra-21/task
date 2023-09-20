@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript |  SetTimeout</title>
+</head>
+<body>
+    <h1 id="one">If i am black wait 3 second i will be red</h1>
+    <script>
+        setTimeout(() => {
+            document.getElementById("one").innerHTML=" I told you."
+            document.getElementById("one").style.color="red"
+        }, 3000);
+    </script>
+</body>
+</html>

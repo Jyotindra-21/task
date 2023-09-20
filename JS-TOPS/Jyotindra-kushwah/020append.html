@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .one {
+            height: 200px;
+            width: 200px;
+        }
+
+        .two {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="start">Click Me</button>
+    <button id="stop">Finish</button>
+    <div class="one two">Hi</div>
+    <script>
+        $(document).ready(function () {
+            $("#start").click(function () {
+                //    $(".one").append("hello")
+                // $(".one").prepend("hello")
+                //  $(".one").after("hello")
+                // $(".one").before("hello")
+                $(".one").animate({ "height": "500px" }, 3000)
+                $(".one").animate({ "width": "500px" }, 3000)
+            })
+            $("#stop").click(function () {
+                //    $(".one").append("hello")
+                //    $(".one").prepend("hello")
+                //    $(".one").after("hello")
+                //    $(".one").before("hello")
+                $(".one").finish()
+            })
+        })
+    </script>
+</body>
+
+</html>

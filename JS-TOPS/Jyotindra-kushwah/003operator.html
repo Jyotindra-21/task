@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Operator</title>
+</head>
+
+<body>
+
+    <script>
+
+        // ************** Arithmetic ****************
+        var a = 20;
+        var b = 10;
+        //   +   addition
+        console.log("Addition of a and b  is:" + a + b)
+        //   *   multiplication
+        console.log("Multiplication of a and b is :" + a * b);
+        //   -   subtraction
+        console.log("Subtraction of a and b is :" + a - b);
+        //   /   division
+        console.log("division of a and b is :" + a / b);
+        //   %   Modulus (Remainder)
+        console.log("Remainder of a and b is :" + a % b)
+
+        // ************** Assignment  ****************
+        //  =
+        var c = a
+        console.log("c assign =  a " + c);
+        //  +=
+        c += a
+        console.log("c assign += a " + c);
+        //  -=
+        // HERE c value is 40 because of above code c += a
+        c -= a
+        console.log("c assign -= a " + c);
+        //  /=
+        // HERE c value is 20 because of above code c -= a
+        c /= a
+        console.log("c assign /= a " + c);
+        //  *=
+        // HERE c value is 1 because of above code c /= a
+        c *= a
+        console.log("c assign *= a " + c);
+        //  %=
+        // HERE c value is 20 because of above code c *= a
+        c %= a
+        console.log("c assign %= a " + c);
+
+        // ************** prefix  ****************
+        // ++a  increment
+        // Here a is increment by  before printing 1
+        console.log(++a);
+        // --a  decrement
+        // Here b is decrement by before printing 1
+        console.log(--b);
+        // ************** postfix  ****************
+        // a++  increment
+        // Here a is increment by  after printing 1
+        console.log(b++);
+
+        // a--  decrement
+        // Here b is decrement by after printing 1
+        console.log(a--);
+
+        // ************** comparison  ****************
+        var x = 10;
+        //  ==     equal to
+        console.log(x == 9)  // false
+        console.log(x == 10)  // true
+        console.log(x == "10") // true
+        //  ===    equal value and equal type
+        console.log(x === "10")  // false
+        console.log(x === 10)  // true
+        //  !=     not equal
+        console.log(x != 9)  // true
+        console.log(x != 10)  // false
+        //  !==    not equal value or not equal type
+        console.log(x !== "10")  // true
+        console.log(x !== 10)  // false
+        //  >      greater than
+        console.log(x > 9)  // true
+        //  <      less than
+        console.log(x < 9)  // false
+        //  >=     greater than or equal to
+        console.log(x >= 10)  // true
+        console.log(x >= 9)  // true
+        console.log(x >= 11)  // false
+        //  <=     less than or equal to
+        console.log(x <= 10)  // true
+        console.log(x <= 9)  // false
+        console.log(x <= 11)  // true
+
+        // ************** logical  ****************
+        var y = 3;
+        var z = 6;
+
+        // &&	and
+        console.log(z < 10 && y > 1)  //  true
+        // ||	or
+        console.log(z == 5 || y == 5) // false;
+        // !	not
+        console.log(!(z == y))  //  true;
+
+        // ************** Conditional (Ternary) Operator  ****************
+       //   variable = (condition) ? value1:value2 
+       var age = 18;
+       let voteable = (age < 18) ? "Too young":"Old enough";
+       console.log(voteable);
+       
+    </script>
+</body>
+
+</html>

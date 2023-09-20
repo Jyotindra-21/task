@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Functions</title>
+</head>
+
+<body>
+
+
+    <script>
+        // Function Without Parameters 
+        function functionName() {
+            document.write("Hello")
+        }
+        functionName()
+
+        // Function With Parameters 
+        function hello(fname, lname) {
+            document.write("<h1>My First Name Is ", fname + "</h1><br>")
+            document.write("<h1>My Last Name Is ", lname + "</h1><br>")
+            document.write("<h1> My Full Name Is ", fname +" "+ lname +"</h1>")
+            // Print this using template string
+            document.write(`<h1> My Full Name Is ${fname} ${lname}</h1>`)
+        }
+        hello("Jyotindra", "Kushwah")
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create basic math operation in JS
+    </title>
+    <style>
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+
+        }
+
+        label {
+            font-size: 20px;
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            padding: 5px 5px;
+            font-size: 20px;
+        }
+
+        input[type="button"] {
+            height: 50px;
+            width: 50px;
+            padding: 10px 10px;
+            font-size: 25px;
+            border: none;
+            background-color: black;
+            color: rgb(74, 233, 74);
+            border-radius: 10px;
+            border: 2px solid gray;
+        }
+
+        span {
+            color: blue;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1>Maths Operations</h1>
+        <table align="center">
+            <tr>
+                <td><label for="firstNum">Enter First Value : </label></td>
+                <td><input type="number" id="firstNum"></td>
+            </tr>
+            <tr>
+                <td><label for="secondNum">Enter Second Value : </label></td>
+                <td><input type="number" id="secondNum"></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" onclick="result(this.value)" value="+">
+                    <input type="button" onclick="result(this.value)" value="-">
+                    <input type="button" onclick="result(this.value)" value="*"><br><br>
+                    <input type="button" onclick="result(this.value)" value="/">
+                    <input type="button" onclick="result(this.value)" value="%">
+                </td>
+                <td><label for="">Answer is : </label><span id="ans"></span></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function result(operation) {
+            var Fval = document.getElementById('firstNum').value;
+            var Sval = document.getElementById('secondNum').value;
+
+            if (Fval=="" || Sval == "") {
+                alert("Filed can not be blank")
+                return false;
+            }
+            var answer = 0;
+            switch (operation) {
+                case "+":
+                    answer = parseInt(Fval) + parseInt(Sval) ;
+                    break;
+                case "-":
+                    answer = Fval - Sval;
+                    break;
+                case "/":
+                    answer = Fval / Sval;
+                    break;
+                case "*":
+                    answer = Fval * Sval;
+                    break;
+                case "%":
+                    answer = Fval % Sval;
+                    break;
+            }
+            document.getElementById('ans').innerHTML = answer;
+        }
+    </script>
+</body>
+
+</html>

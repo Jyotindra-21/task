@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.hero {
+  height: 100vh;
+  background-image: url("./img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* SIDE BAR */
+.hero .sidebar {
+  height: 100vh;
+  width: 20%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+.hero .sidebar .heading {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.hero .sidebar .heading > h1 {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+  border: 1px solid white;
+}
+.hero .sidebar .heading h2 {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  left: 23%;
+  top: 54px;
+  border: 1px solid white;
+}
+.hero .sidebar ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+.hero .sidebar ul li {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+.hero .sidebar .bottom-sec {
+  position: absolute;
+  bottom: 0;
+}
+.hero .sidebar ul.social {
+  flex-direction: row;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.hero .sidebar ul.social li i {
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+.hero .sidebar .bottom-sec h3 {
+  text-transform: capitalize;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 500;
+  padding: 20px;
+}
+/* side navbar*/
+.container {
+  height: 1820px;
+  display: flex;
+}
+.container .sidenav {
+  width: 20%;
+  height: 100%;
+  background-color: rgb(108, 108, 108);
+}
+.container .main-container {
+  width: 80%;
+}
+/* About US */
+.about,
+.work {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 50px 100px;
+  text-align: left;
+}
+.about > div {
+  width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 20px;
+}
+.about i {
+  font-size: 80px;
+  color: blue;
+  opacity: 0.7;
+}
+
+.about h4 {
+  font-size: 20px;
+  color: blue;
+  opacity: 0.7;
+}
+.about p {
+  width: 80%;
+}
+
+/* Our work */
+.outter-work {
+  width: 80%;
+  border: 1px solid black;
+  position: relative;
+  height: 397px;
+}
+.inner-work {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  left: 10px;
+  top: 10px;
+  width: 100%;
+  padding: 30px 50px;
+  border: 1px solid black;
+}
+.inner-work h3 {
+  color: blue;
+  opacity: 0.7;
+  padding: 20px 0;
+}
+.inner-work .work-img {
+  display: flex;
+  justify-content: space-between;
+}
+.inner-work .work-img img {
+  height: 250px;
+}
+
+/* our Client */
+.cleint {
+  padding: 50px 100px;
+}
+.cleint p {
+  width: 80%;
+  line-height: 32px;
+  color: grey;
+  font-size: 18px;
+}
+.cleint h3 {
+  color: blue;
+  opacity: 0.7;
+  padding: 20px 0;
+}
+.cleint .complany-logo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 15px;
+}
+.cleint .complany-logo img {
+  width: 20%;
+  padding: 5px 20px;
+  border: 1px solid black;
+  object-fit: contain;
+}
+
+/* Footer */
+.footer {
+  padding: 50px 100px;
+  display: flex;
+  gap: 5%;
+}
+.footer .talk {
+  border: 1px solid black;
+  width: 40%;
+  position: relative;
+  height: 235px;
+}
+.footer .talk .talk-us {
+  border: 1px solid black;
+  padding: 50px 40px;
+  display: flex;
+  top: 10px;
+  width: 100%;
+  left: 10px;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+}
+.footer .talk .talk-us h3 {
+  color: blue;
+  opacity: 0.7;
+}
+.footer .talk .talk-us p {
+  color: grey;
+}
+.message {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+.message form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px 20px;
+}
+.message form input, .message form textarea{
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+}
+.message form button{
+  width: fit-content;
+  border: none;
+  border-radius: 5px;
+}
+.message form .submit{
+  display: flex;
+  justify-content: flex-end;
+}

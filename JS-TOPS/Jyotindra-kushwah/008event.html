@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javascript | Events </title>
+    <style>
+        img {
+            height: 500px;
+        }
+
+        #on,
+        #off {
+            padding: 10px 15px;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+
+        #on {
+            background-color: red;
+        }
+
+        #off {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <P id="one">Hello</P> -->
+    <!-- ********** EVENT LIST ********** -->
+    <!-- 
+    1. onclick 
+    2. onchange
+    3. onmouseleave
+    4. onmouseenter
+    5. dblclick
+    6. onkeydown
+    7. onload -->
+
+    <button id="on" onclick="document.getElementById('img').src='bulbon.png'">ON</button>
+    <img src="bulboff.png" alt="" id="img">
+    <button id="off" onclick="document.getElementById('img').src='bulboff.png'">OFF</button>
+    <!-- <button onclick="document.getElementById('one').innerHTML='HIIII'">click here</button> -->
+    <!-- <button onmouseleave="document.getElementById('one').innerHTML='HIIII'">click here</button> -->
+    <!-- <button ondblclick="document.getElementById('one').innerHTML='HIIII'">click here</button> -->
+</body>
+
+</html>

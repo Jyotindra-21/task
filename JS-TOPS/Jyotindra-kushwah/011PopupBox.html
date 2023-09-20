@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Popup Box</title>
+</head>
+
+<body>
+    <!-- There are 3 types of popup boxes 
+    1.alert box
+    2.prompt box
+    3.confirm box -->
+    <p id="one"></p>
+    <button onclick="myalert()">Alert</button>
+    <button onclick="myconfirm()">Confirm</button>
+    <button onclick="myprompt()">Prompt</button>
+
+    <script>
+        // Alert 
+        function myalert() {
+            alert("How Are You!!")
+        }
+        // Confirm Box
+        function myconfirm() {
+            var txt
+            if (confirm("Your are Indian ?")) {
+                txt = "Congratulation"
+            } else {
+                txt = "sorry !"
+            }
+            document.getElementById("one").innerHTML = txt
+        }
+        // Prompt
+        function myprompt() {
+            var txt
+            var per = prompt("Enter Your Name")
+            if (per == "" || per == null) {
+                txt = "plz enter your name"
+            } else {
+                txt = `Hi " ${per}" <br> How Are You ? `
+            }
+            document.getElementById("one").innerHTML = txt
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Array</title>
+</head>
+
+<body>
+    <h1 id="one"></h1>
+    <script>
+        //  array can store multiple type of data in a single variable
+        var myArray = ["apple", 10, 58, 5.25, 'car','bike']
+        // document.getElementById("one").innerHTML = myArray
+        // document.getElementById("one").innerHTML=myArray[0]
+
+
+        // second way to create array
+
+        var vehicle = [];
+        vehicle[0] = "car"
+        vehicle[1] = "bike"
+        vehicle[2] = "bicycle"
+        vehicle[3] = "truck"
+
+        document.getElementById("one").innerHTML=vehicle[1]
+
+        // third way to create array
+
+        var car = Array("wheels" , 4 , "door")
+        document.getElementById("one").innerHTML=car
+
+        // TO GET ARRAY LENGTH
+        document.getElementById("one").innerHTML=car.length
+
+        // TO sort array in numeric and alphabetical order 
+        // NOTE : First consider numeric value
+        document.getElementById("one").innerHTML=car.sort()
+
+        // To reverse array 
+        document.getElementById("one").innerHTML=car.reverse()
+
+        
+    </script>
+</body>
+
+</html>
