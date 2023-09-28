@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | Jquery Basic Effect & Advanced </title>
+    <!-- External  Stylesheet  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <!-- Display Screen -->
+        <div class="screen">
+            <div class="deg" onclick="Clear()">DEG</div>
+            <input class="input-values" type="text" id="calc">
+            <input class="input-values" type="text" id="result">
+        </div>
+        <!-- Keyboard keys -->
+        <div class="inputs">
+            <input type="button" onclick="Solve(this.value)" class="b7" value="7">
+            <input type="button" onclick="Solve(this.value)" class=" b8" value="8">
+            <input type="button" onclick="Solve(this.value)" class=" b9" value="9">
+            <input type="button" onclick="Back()" class="oparation bdel" value="&leftarrow;">
+            <input type="button" onclick="Solve(this.value)" class=" b4" value="4">
+            <input type="button" onclick="Solve(this.value)" class=" b5" value="5">
+            <input type="button" onclick="Solve(this.value)" class=" b6" value="6">
+            <input type="button" onclick="Solve(this.value)" class="oparation bdived" value="/">
+            <input type="button" onclick="Solve(this.value)" class=" b1" value="1">
+            <input type="button" onclick="Solve(this.value)" class=" b2" value="2">
+            <input type="button" onclick="Solve(this.value)" class=" b3" value="3">
+            <input type="button" onclick="Solve(this.value)" class="oparation bmulti" value="*">
+            <input type="button" onclick="Solve(this.value)" class="oparation bsub" value="-">
+            <input type="button" onclick="Solve(this.value)" class=" bdot" value=".">
+            <input type="button" onclick="Solve(this.value)" class=" b0" value="0">
+            <input type="button" onclick="Result()" class=" bequal" value="=">
+            <input type="button" onclick="Solve(this.value)" class=" oparation badd" value="+">
+        </div>
+    </div>
+    <!-- External Script -->
+    <script src="script.js"></script>
+</body>
+</html>
