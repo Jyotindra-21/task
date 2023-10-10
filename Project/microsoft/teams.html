@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap file -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css">
+    <title>Video Conferencing, Meetings, Calling | Microsoft Teams</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+    <!--==*==*==*= NAVIGATION BAR START =*==*==*==-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #fff;">
+        <div class="container-fluid nav-container">
+            <div class="ntoggler-serach d-flex">
+                <button class="navbar-toggler ms-4 mx-md-5" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                </button>
+                <button class="btn d-flex  d-md-none justify-content-center align-items-center"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <a class="navbar-brand mx-4 mx-md-5" href="/"><img src="./img/logo.png" alt=""></a>
+            <h3 class="d-none d-lg-flex">|&ThickSpace;</h3>
+            <h5 class="m-0 mb-1 d-none d-lg-flex">&ThickSpace;Teams</h5>
+            <div class="cart-user d-flex">
+                <button class="btn d-flex d-md-none justify-content-center align-items-center"> <img
+                        style="width: 32px;" src="./img/user.svg" alt=""></button>
+            </div>
+            <button class="navbar-toggler ms-4 mx-md-5" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMicrosoft365" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Teams <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMicrosoft365">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown d-md-none d-flex justify-content-center align-items-center">
+                        <a class="nav-link" href="#">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown d-md-flex d-flex justify-content-center align-items-center">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu d-all-products" aria-labelledby="navbarDropdown">
+                            <div class="d-flex">
+                                <ul>
+                                    <li><a href="">For home</a></li>
+                                    <li><a href="">Pricing for Home</a></li>
+                                    <li><a href="">For families</a></li>
+                                    <li><a href="">For individuals</a></li>
+                                    <li><a href="">For students</a></li>
+                                    <li><a href="">See all home</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="">For business</a></li>
+                                    <li><a href="">Pricing for Business</a></li>
+                                    <li><a href="">For Small Business</a></li>
+
+                                </ul>
+                                <ul>
+                                    <li><a href="">For enterprise</a></li>
+                                    <li><a href="">Pricing for Enterprise</a></li>
+                                    <li><a href="">For Enterprise</a></li>
+                                    <li><a href="">For Frontline workers</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="">Apps and services</a></li>
+                                    <li><a href="">Excel</a></li>
+                                    <li><a href="">Microsoft Teams</a></li>
+                                    <li><a href="">Word</a></li>
+                                    <li><a href="">OneDrive</a></li>
+                                    <li><a href="">OneNote</a></li>
+                                    <li><a href="">Outlook</a></li>
+                                    <li><a href="">PowerPoint</a></li>
+                                    <li><a href="">Project</a></li>
+                                    <li><a href="">SharePoint</a></li>
+                                    <li><a href="">See all apps and services</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="">More</a></li>
+                                    <li><a href="">Microsoft Office</a></li>
+                                    <li><a href="">Windows 365</a></li>
+                                    <li><a href="">Microsoft Authenticator</a></li>
+                                    <li><a href="">Enterprise Mobility + Security</a></li>
+                                    <li><a href="">Microsoft Edge</a></li>
+                                    <li><a href="">For Nonprofits</a></li>
+                                    <li><a href="">For Schools</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="">What’s new</a></li>
+                                    <li><a href="">Clipchamp</a></li>
+                                    <li><a href="">Microsoft Viva</a></li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                        <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul> -->
+                    </li>
+                    <li class="nav-item dropdown d-md-flex d-flex justify-content-center align-items-center">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Features
+                        </a>
+                        <div class="dropdown-menu d-all-resource" aria-labelledby="navbarDropdown">
+                            <div class="d-flex">
+                                <ul>
+                                    <li><a href="">Cost saving</a></li>
+                                    <li><a href="">Accounts and billing</a></li>
+                                    <li><a href="">FAQ</a></li>
+                                    <li><a href="">Setup and install</a></li>
+                                    <li><a href="">Templates</a></li>
+                                    <li><a href="">Training</a></li>
+                                    <li><a href="">What’s new</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown d-md-flex d-flex justify-content-center align-items-center">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Industry
+                        </a>
+                        <div class="dropdown-menu d-all-resource" aria-labelledby="navbarDropdown">
+                            <div class="d-flex">
+                                <ul>
+                                    <li class="d-flex justify-content-between align-items-center">
+
+                                        <a href="">For personal and family</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+
+                                        <ul class="sub-drop">
+                                            <li><a href="">Self-help resource</a> </li>
+                                            <li><a href="">Billing support</a> </li>
+                                            <li><a href="">Community</a> </li>
+                                            <li><a href="">Contact Microsoft Support</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center"><a href="">For
+                                            work</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <ul class="sub-drop">
+                                            <li><a href="">Self-help resource</a> </li>
+                                            <li><a href="">Admin self-help</a> </li>
+                                            <li><a href="">Billing support</a> </li>
+                                            <li><a href="">Find a partner</a> </li>
+                                            <li><a href="">Contact Sales</a> </li>
+                                            <li><a href="">Community</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center"><a href="">For e
+                                            ducation</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <ul class="sub-drop">
+                                            <li><a href="">Self-help resource</a> </li>
+                                            <li><a href="">Education Center</a> </li>
+                                            <li><a href="">Request Support</a> </li>
+                                            <li><a href="">Contact Microsoft Support</a> </li>
+                                            <li><a href="">Community</a> </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center"><a href="">For
+                                            partners</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <ul class="sub-drop">
+                                            <li><a href="">Become a partner</a> </li>
+                                            <li><a href="">Partner Resource</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">See all support</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown d-md-flex d-flex justify-content-center align-items-center">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Resource
+                        </a>
+                        <div class="dropdown-menu d-all-resource" aria-labelledby="navbarDropdown">
+                            <div class="d-flex">
+                                <ul>
+                                    <li class="d-flex justify-content-between align-items-center">
+
+                                        <a href="">For personal and family</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+
+                                        <ul class="sub-drop">
+                                            <li><a href="">Self-help resource</a> </li>
+                                            <li><a href="">Billing support</a> </li>
+                                            <li><a href="">Community</a> </li>
+                                            <li><a href="">Contact Microsoft Support</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center"><a href="">For
+                                            work</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <ul class="sub-drop">
+                                            <li><a href="">Self-help resource</a> </li>
+                                            <li><a href="">Admin self-help</a> </li>
+                                            <li><a href="">Billing support</a> </li>
+                                            <li><a href="">Find a partner</a> </li>
+                                            <li><a href="">Contact Sales</a> </li>
+                                            <li><a href="">Community</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center"><a href="">For e
+                                            ducation</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <ul class="sub-drop">
+                                            <li><a href="">Self-help resource</a> </li>
+                                            <li><a href="">Education Center</a> </li>
+                                            <li><a href="">Request Support</a> </li>
+                                            <li><a href="">Contact Microsoft Support</a> </li>
+                                            <li><a href="">Community</a> </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center"><a href="">For
+                                            partners</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <ul class="sub-drop">
+                                            <li><a href="">Become a partner</a> </li>
+                                            <li><a href="">Partner Resource</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">See all support</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown d-md-flex d-flex justify-content-center align-items-center">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Support
+                        </a>
+                        <div class="dropdown-menu d-all-resource" aria-labelledby="navbarDropdown">
+                            <div class="d-flex">
+                                <ul>
+                                    <li class="d-flex justify-content-between align-items-center">
+
+                                        <a href="">For personal and family</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+
+                                        <ul class="sub-drop">
+                                            <li><a href="">Self-help resource</a> </li>
+                                            <li><a href="">Billing support</a> </li>
+                                            <li><a href="">Community</a> </li>
+                                            <li><a href="">Contact Microsoft Support</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center"><a href="">For
+                                            work</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <ul class="sub-drop">
+                                            <li><a href="">Self-help resource</a> </li>
+                                            <li><a href="">Admin self-help</a> </li>
+                                            <li><a href="">Billing support</a> </li>
+                                            <li><a href="">Find a partner</a> </li>
+                                            <li><a href="">Contact Sales</a> </li>
+                                            <li><a href="">Community</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center"><a href="">For e
+                                            ducation</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <ul class="sub-drop">
+                                            <li><a href="">Self-help resource</a> </li>
+                                            <li><a href="">Education Center</a> </li>
+                                            <li><a href="">Request Support</a> </li>
+                                            <li><a href="">Contact Microsoft Support</a> </li>
+                                            <li><a href="">Community</a> </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-items-center"><a href="">For
+                                            partners</a>
+                                        <i class="fa-solid fa-angle-right"></i>
+                                        <ul class="sub-drop">
+                                            <li><a href="">Become a partner</a> </li>
+                                            <li><a href="">Partner Resource</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="">See all support</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+
+            </div>
+            <!-- <ul class="navbar-nav mb-2 mb-lg-0 d-none d-sm-none d-md-flex align-items-center">
+                <li class="nav-item dropdown d-none d-md-flex d-flex justify-content-center align-items-center">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        All Microsoft
+                    </a>
+                    <div class="dropdown-menu d-all-microsoft" aria-labelledby="navbarDropdown">
+                        <div class="d-flex">
+                            <ul>
+                                <li><a href="">Software</a></li>
+                                <li><a href="">Windows apps</a></li>
+                                <li><a href="">ai</a></li>
+                                <li><a href="">onedrive</a></li>
+                                <li><a href="">skype</a></li>
+                                <li><a href="">onenote</a></li>
+                                <li><a href="">microsoft teams</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">PCs & devices</a></li>
+                                <li><a href="">shop xbox</a></li>
+                                <li><a href="">accessories</a></li>
+
+                            </ul>
+                            <ul>
+                                <li><a href="">Entertainment</a></li>
+                                <li><a href="">xbox game pass ultimate</a></li>
+                                <li><a href="">xbox live gold</a></li>
+                                <li><a href="">xbox games</a></li>
+                                <li><a href="">pc games</a></li>
+                                <li><a href="">windows digital games</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">business</a></li>
+                                <li><a href="">microsoft cloud</a></li>
+                                <li><a href="">microsoft security</a></li>
+                                <li><a href="">azure</a></li>
+                                <li><a href="">dynamics 365</a></li>
+                                <li><a href="">microsoft 365 for business</a></li>
+                                <li><a href="">dynamics industry</a></li>
+                                <li><a href="">dynamics power platform</a></li>
+                                <li><a href="">windows 365</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">Developer & IT</a></li>
+                                <li><a href="">developer center</a></li>
+                                <li><a href="">documentation</a></li>
+                                <li><a href="">microsoft tech community</a></li>
+                                <li><a href="">azure marketplace</a></li>
+                                <li><a href="">appSource</a></li>
+                                <li><a href="">visual studio</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">Other</a></li>
+                                <li><a href="">free downloads & security</a></li>
+                                <li><a href="">education</a></li>
+                                <li><a href="">gift cards</a></li>
+                                <li><a href="">licensing</a></li>
+
+                            </ul>
+                        </div>
+                        <button class="w-100">View sitemap <i class="fa-solid fa-chevron-right"></i></button>
+
+                    </div>
+                </li>
+                <li>
+                    <button class="btn d-flex justify-content-center align-items-center"> <a href=""
+                            class="nav-link "><span class="d-none d-xxl-block">Search</span></a> <i
+                            class="fa-solid fa-magnifying-glass fa-rotate-90"></i></button>
+                </li>
+                <li><button class="btn d-flex justify-content-center align-items-center"><a href=""
+                            class="nav-link"><span class="d-none d-md-none d-xxl-block">Username</span></a><img
+                            style="width: 32px;" src="./img/user.svg" alt=""></button>
+                </li>
+            </ul> -->
+        </div>
+    </nav>
+    <!--==*==*==*= NAVIGATION BAR END =*==*==*==-->
+    <!-- ************** MAIN CONTAINER START *******************-->
+    <div id="teams-main">
+        <h6 class="top-header">Microsoft Teams is now faster and simpler than ever. Discover what’s possible <i
+                class="fa-solid fa-chevron-right"></i></h6>
+        <!-- Teams page1 -->
+        <div class="t-page1">
+            <div class="container">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <div class="card-body p-5">
+                                <h1 class="card-title">Get more done with Microsoft Teams</h1>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-7 ">
+                            <video style="margin: -1.3px;" loop controls
+                                src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/New-Teams-Sizzle-Microsoft_video_en-us-0x540-2160k"></video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Teams page2 -->
+        <div class="t-page2">
+            <div class="container">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-5">
+                            <div class="card-body p-5">
+                                <h1 class="card-title" style="width: 80%;">More is possible with Microsoft Teams</h1>
+                                <p class="card-text" style="width: 60%;">Stay connected and access shared content any
+                                    time to learn, plan,
+                                    and innovate—together.</p>
+
+                            </div>
+                        </div>
+                        <div class="col-md-7 d-flex align-items-center  justify-content-between gap-4">
+                            <div class="t-page2-img-button">
+                                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Home-400x400?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=75&wid=400&hei=400"
+                                    alt="">
+                                <button> Home <i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                            <div class="t-page2-img-button">
+                                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Business-400x400?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=75&wid=400&hei=400"
+                                    alt="">
+                                <button> Business <i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                            <div class="t-page2-img-button">
+                                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Enterprise-400x400?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=75&wid=400&hei=400"
+                                    alt="">
+                                <button> Enterprise <i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                            <div class="t-page2-img-button">
+                                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Image-Education-400x400?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=75&wid=400&hei=400"
+                                    alt="">
+                                <button> Education <i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Teams Page3 -->
+
+        <div class="t-page3">
+            <!-- MEET -->
+            <div class="mccc">
+                <div class="mcc-top">
+                    <div class="card mb-3 meet">
+                        <div class="row g-0">
+                            <div class="col-md-12">
+                                <ul>
+                                    <li>Meet</li>
+                                    <li>Call</li>
+                                    <li>Collaborate</li>
+                                    <li>Chat</li>
+                                </ul>
+                                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Meet1:VP5-1920x600?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=100"
+                                    class="img-fluid rounded-start" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mcc-bottom container">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h1 class="card-title " align="center" style="font-size: 50px;">Meet</h1>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text">Share your screen, change or blur your background, and use
+                                        together mode to virtually be in the same space.</p>
+                                    <a href="">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CALL -->
+            <div class="mccc">
+                <div class="mcc-top">
+                    <div class="card mb-3 call">
+                        <div class="row g-0">
+                            <div class="col-md-12">
+                                <ul>
+                                    <li>Meet</li>
+                                    <li>Call</li>
+                                    <li>Collaborate</li>
+                                    <li>Chat</li>
+                                </ul>
+                                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/call1:VP5-1920x600?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=100&fit=crop"
+                                    class="img-fluid rounded-start" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mcc-bottom container">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h1 class="card-title " align="center" style="font-size: 50px;">Call</h1>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text">Make and receive calls directly in Teams with advanced features
+                                        like group calling, voicemail, and call transfers.</p>
+                                    <a href="">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- COLLABORATE -->
+            <div class="mccc">
+                <div class="mcc-top">
+                    <div class="card mb-3 collaborate">
+                        <div class="row g-0">
+                            <div class="col-md-12">
+                                <ul>
+                                    <li>Meet</li>
+                                    <li>Call</li>
+                                    <li>Collaborate</li>
+                                    <li>Chat</li>
+                                </ul>
+                                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/collaborate1:VP5-1920x600?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=100"
+                                    class="img-fluid rounded-start" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mcc-bottom container">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h1 class="card-title " align="center" style="font-size: 50px;">Collaborate</h1>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text">Easily find, share, and edit files together in real time with
+                                        apps like Word, PowerPoint, and Excel.</p>
+                                    <a href="">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CHAT -->
+            <div class="mccc">
+                <div class="mcc-top">
+                    <div class="card mb-3 chat">
+                        <div class="row g-0">
+                            <div class="col-md-12">
+                                <ul>
+                                    <li>Meet</li>
+                                    <li>Call</li>
+                                    <li>Collaborate</li>
+                                    <li>Chat</li>
+                                </ul>
+                                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/chat1:VP5-1920x600?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85"
+                                    class="img-fluid rounded-start" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mcc-bottom container">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h1 class="card-title " align="center" style="font-size: 50px;">Chat</h1>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <p class="card-text">Share your thoughts and your personality. Send GIFs, stickers,
+                                        and emojis in one-to-one or group chats.</p>
+                                    <a href="">Learn more <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 align="center" class="my-5" style="width: 70%; margin: auto;">See how companies are using Microsoft Teams
+        </h1>
+        <!-- Teams Page4 -->
+
+        <div class="t-page4 d-flex gap-4 justify-content-center px-5">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">L’Oréal gives hybrid work a makeover with Microsoft 365 and Microsoft Teams
+                    </h1>
+                    <p class="card-text">”In this new world, L’Oréal is focused on facilitating collaboration,
+                        communication, and co-creation among our employees, which is why we use Microsoft 365 and
+                        Microsoft Teams.”</p>
+                    <p class="card-text">Etienne Bertin: Chief Information Officer, L’Oréal</p>
+                </div>
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Blade008_CS_L%E2%80%99Or%C3%A9al_788x569_2x_v1?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=100&fit=constrain"
+                    class="card-img-bottom" alt="...">
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">U.S. Bank invests in culture building tools for a hybrid world with Microsoft
+                        365</h1>
+                    <p class="card-text">“With Microsoft 365, we’re offering employees a great suite of tools and
+                        enabling more freedom and flexibility in terms of how and where they work.“</p>
+                    <p class="card-text">Zephanie Hardy: Senior Vice President of Employee Technology Experience, U.S.
+                        Bank</p>
+                </div>
+                <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Blade008_CS_US%20Bank_788x569_2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=786&hei=443&qlt=100&fit=constrain"
+                    class="card-img-bottom" alt="...">
+            </div>
+        </div>
+
+        <!-- teams Page5 -->
+        <div class="t-page5">
+            <div class="card m-5">
+                <div class="row g-0">
+                    <div class="col-md-7 ">
+                        <div class="card-body">
+                            <h1 class="card-title" style="width: 80%;">Get started with Microsoft Teams today</h1>
+                            <div class="t-page5-buttons">
+                                <button>Sign up for free</button>
+                                <button>Download app</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <ul>
+                            <li>
+                                <div class="icon-con">
+                                    <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Home-1"
+                                        alt="">
+                                </div>
+                                <div class="content-con">
+                                    <h4>Home</h4>
+                                    <a href="">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-con">
+                                    <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Business"
+                                        alt="">
+                                </div>
+                                <div class="content-con">
+                                    <h4>Business</h4>
+                                    <a href="">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-con">
+                                    <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Enterprise"
+                                        alt="">
+                                </div>
+                                <div class="content-con">
+                                    <h4>Enterprise</h4>
+                                    <a href="">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="icon-con">
+                                    <img src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Education"
+                                        alt="">
+                                </div>
+                                <div class="content-con">
+                                    <h4>Education</h4>
+                                    <a href="">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </li>
+                         
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Teams page6 -->
+        <div class="container page6 my-5">
+            <ul class="d-flex">
+                <li>Follow Microsoft Teams</li>
+                <li><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Twitter-34?scl=1" alt=""></li>
+                <li><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Instagram%202x?scl=1" alt="">
+                </li>
+                <li><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/YouTube%202x?scl=1" alt="">
+                </li>
+                <li><img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Blog?scl=1" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <!-- ************** MAIN CONTAINER END *******************-->
+
+    <!--==*==*==*= FOOTER START =*==*==*==  -->
+    <div class="footer">
+        <div class="footer-content-link d-flex justify-content-center" style="gap:70px;">
+            <ul>
+                <li><a href=""> What's new </a></li>
+                <li><a href="">Microsoft 365</a></li>
+                <li><a href="">Games</a></li>
+                <li><a href="">Surface Pro 9</a></li>
+                <li><a href="">Surface Laptop 5</a></li>
+                <li><a href="">Surface Laptop Go 2</a></li>
+                <li><a href="">Windows 11 apps</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Microsoft Store</a></li>
+                <li><a href="">Account profile</a></li>
+                <li><a href="">Download Center</a></li>
+                <li><a href="">Microsoft Store Support</a></li>
+                <li><a href="">Returns</a></li>
+                <li><a href="">Order tracking</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="">Education</a></li>
+                <li><a href="">Microsoft in education</a></li>
+                <li><a href="">Devices for education</a></li>
+                <li><a href="">Microsoft Teams for Education</a></li>
+                <li><a href="">Microsoft 365 Education</a></li>
+                <li><a href="">Office Education</a></li>
+                <li><a href="">Educator training and development</a></li>
+                <li><a href="">Deals for students and parents</a></li>
+                <li><a href="">Azure for students</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Business</a></li>
+                <li><a href="">Microsoft Cloud</a></li>
+                <li><a href="">Microsoft Security</a></li>
+                <li><a href="">Azure</a></li>
+                <li><a href="">Dynamics 365</a></li>
+                <li><a href="">Microsoft 365</a></li>
+                <li><a href="">Microsoft Advertising</a></li>
+                <li><a href="">Microsoft Industry</a></li>
+                <li><a href="">Microsoft Teams</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Developer & IT</a></li>
+                <li><a href="">Developer Center</a></li>
+                <li><a href="">Documentation</a></li>
+                <li><a href="">Microsoft Learn</a></li>
+                <li><a href="">Microsoft Tech Community</a></li>
+                <li><a href="">Azure Marketplace</a></li>
+                <li><a href="">AppSource</a></li>
+                <li><a href="">Microsoft Power Platform</a></li>
+                <li><a href="">Visual Studio</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Company</a></li>
+                <li><a href="">Careers</a></li>
+                <li><a href="">About Microsoft</a></li>
+                <li><a href="">Company news</a></li>
+                <li><a href="">Privacy at Microsoft</a></li>
+                <li><a href="">Investors</a></li>
+                <li><a href="">Security</a></li>
+                <li><a href="">Sustainability</a></li>
+            </ul>
+        </div>
+        <div class="footer-content-bottom">
+            <div class="footer-left">
+                <ul>
+                    <li><button class="btn d-flex justify-content-center align-items-center"><i
+                                class="fa-solid fa-earth-americas"></i> <a href="" class="nav-link"><span> English
+                                    (India)</span></a> </button>
+                    </li>
+                    <li><button class="btn d-flex justify-content-center align-items-center"><img src="./img/toggle.svg"
+                                alt=""><a href="" class="nav-link"><span> Your
+                                    Privacy Choices</span></a></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="">Contact Microsoft</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Terms of use</a></li>
+                    <li><a href="">trademarks</a></li>
+                    <li><a href="">About our ads</a></li>
+                    <li><a href="">&copy; microsoft 2023</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--==*==*==*= FOOTER END =*==*==*==  -->
+    <!-- scripts -->
+    <!-- Bootstrap bundle file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- custom script file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
