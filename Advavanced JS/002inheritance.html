@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+    <script>
+        class a {
+             sum(){
+                var a=10,b=20,sum=a+b
+                document.write(sum)
+            }
+        }
+
+        class b extends a{
+            sub(){
+                var a=20,b=10,sum=a-b
+                document.write(sub)
+            }
+        }
+
+        class c extends a{
+            multi(){
+                var a=20,b=10,multi=a*b
+                document.write(multi)
+            }
+        }
+        class d extends a{
+            divi(){
+                var a=20,b=10,divi=a/b
+                document.write(divi)
+            }
+        }
+        const obj = new b
+        const obj1 = new c
+        const obj2 = new d
+        obj2.divi()
+    </script>
+</body>
+
+</html>

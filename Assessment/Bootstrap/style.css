@@ -8,7 +8,203 @@ body {
   width: 100%;
   height: 100%;
 }
-.navbar .container{
-    display: flex;
-    justify-content: space-between;
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+.mynav {
+  flex-grow: unset;
+}
+.mynav ul {
+  gap: 2rem;
+}
+.mynav ul li a {
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* HERO SECTION */
+#hero {
+  height: 50vh;
+  width: 100%;
+  background-color: orangered;
+  position: relative;
+}
+#hero .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#hero .container a {
+  font-size: 5rem;
+  color: #fff;
+  text-decoration: none;
+}
+#hero .container h5 {
+  color: #fff;
+}
+#hero .container input[type="search"] {
+  padding: 10px 5px;
+  width: 350px;
+  border: none;
+  border-radius: 2px;
+}
+#hero .container input[type="search"]:focus {
+  outline: none;
+}
+#hero .search-btn {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#hero .container button {
+  padding: 7px 20px;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: rgb(239, 44, 239);
+  color: #fff;
+}
+/* ABOUT */
+#about .card {
+  border: none;
+}
+
+#about .card .card-body {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  padding: 0;
+  gap: 30px;
+}
+#about button {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 2px;
+  width: fit-content;
+}
+#about .signal-icon i {
+  font-size: 200px;
+  color: orangered;
+}
+
+.page-title {
+  text-align: center;
+  margin-top: 15px;
+}
+.page-title p {
+  margin-top: 15px;
+}
+/* Services */
+#services .service {
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+#services .service i {
+  color: orangered;
+  font-size: 50px;
+}
+/* portfolio */
+#portfolio {
+  background-color: lightgray;
+  color: #000;
+}
+#portfolio .card-image {
+  height: 270px;
+}
+#portfolio .card-image img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+#portfolio .carousel-image {
+  height: 150px;
+}
+#portfolio .carousel-caption h5 {
+  width: 60%;
+  margin: auto;
+  color: #000;
+}
+#portfolio .carousel-indicators button {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid orangered;
+}
+#portfolio .carousel-indicators {
+  bottom: -50px;
+}
+#portfolio .carousel-indicators .active {
+  background-color: orangered;
+}
+/* Pricing */
+#pricing .card {
+  border: 2px solid orangered;
+  border-radius: 0;
+}
+#pricing .card-header {
+  background-color: orangered;
+  border-radius: 0;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+#pricing .card-header h4 {
+  font-size: 35px;
+  padding: 10px;
+}
+#pricing .card-body {
+  text-align: center;
+}
+
+/* Contact */
+
+#contact {
+  background-color: lightgray;
+}
+#contact .container .card {
+  background-color: transparent;
+  border: none;
+}
+#contact button[type="submit"] {
+  background-color: orangered;
+  color: white;
+  font-weight: 500;
+}
+
+/* Map */
+#map-location {
+  height: 60vh;
+  width: 100%;
+}
+
+#map-location img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  #hero .container input[type="search"] {
+    width:300px;
+  }
+  #hero .search-btn {
+    flex-direction: column;
+  }
+  #portfolio .carousel-caption h5{
+    width: 100%;
+  }
+  .cities{
+    padding: 0 10px;
+  }
 }

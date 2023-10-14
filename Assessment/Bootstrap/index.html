@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Company</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,25 +16,347 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container ">
-            <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#">Business</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="#">ABOUT</a>
-                    <a class="nav-link" href="#">FEATURES</a>
-                    <a class="nav-link" href="#">PRICING</a>
-                    <a class="nav-link" href="#">CONTACT</a>
-                </div>
+            <div class="collapse navbar-collapse mynav" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
+    <!-- Hero section -->
+    <section id="hero">
+        <div class="container">
+            <a href="" class="typewrite" data-period="2000"
+                data-type='[ "Business.", "Creative.", "Design.", "Develop." ]'>
+                <span class="wrap"></span>
+            </a>
+            <h5>We are specialize in Business.</h5>
+            <div class="search-btn">
+                <input type="search" placeholder="Search business.">
+                <button>Search</button>
+            </div>
+        </div>
+    </section>
+    <!-- about -->
+    <section id="about">
+        <div class="container">
+            <div class="card my-5 p-0">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">ABOUT COMPANY PAGE</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque omnis
+                                sequi repudiandae ad commodi delectus, veniam deserunt ullam placeat quia nulla
+                                consectetur doloremque? Amet natus in expedita accusamus dignissimos perferendis.</p>
+                            <p class="card-text"><small class="text-body-secondary">Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. Voluptatum, ipsam impedit iste dignissimos fuga
+                                    laudantium vel? Perspiciatis ipsum nam maxime, ipsam magni corporis repellat
+                                    voluptatem molestiae fugit iste, itaque, animi voluptate ab debitis culpa dolorem
+                                    totam nesciunt doloribus deleniti. Libero laboriosam alias illo delectus iusto nemo
+                                    eum. Totam, consequuntur architecto.</small></p>
+                            <button>Get in Touch</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4 signal-icon">
+                        <i class="fa-solid fa-signal"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services -->
+    <div class="page-title">
+        <h4>SERVICES</h4>
+        <p>What we offer</p>
+    </div>
+    <section id="services">
+        <div class="container">
+            <div class="row gap-10">
+                <div class="col-6 col-md-4">
+                    <div class="service">
+                        <i class="fa-solid fa-power-off"></i>
+                        <h6>POWER</h6>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="service">
+                        <i class="fa-solid fa-heart"></i>
+                        <h6>LOVE</h6>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="service">
+                        <i class="fa-solid fa-suitcase"></i>
+                        <h6>Job Done</h6>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="service">
+                        <i class="fa-brands fa-envira"></i>
+                        <h6>GREEN</h6>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="service">
+                        <i class="fa-solid fa-sun"></i>
+                        <h6>CERTIFIED</h6>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="service">
+                        <i class="fa-solid fa-wrench"></i>
+                        <h6>HARD WORK</h6>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio -->
+
+    <section id="portfolio">
+        <div class="page-title py-5">
+            <h4>PORTFOLIO</h4>
+            <p>What we have created</p>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-4 cities">
+                <div class="col">
+                    <div class="card mycard">
+                        <div class="card-image">
+                            <img src="https://plus.unsplash.com/premium_photo-1678379473620-db6bc7ff8a11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+                                class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body" align="center">
+                            <h5 class="card-title">Perish</h5>
+                            <p class="card-text">Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mycard">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1471039497385-b6d6ba609f9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                                class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body" align="center">
+                            <h5 class="card-title">New York</h5>
+                            <p class="card-text">Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mycard">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1512187849-463fdb898f21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80"
+                                class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body" align="center">
+                            <h5 class="card-title">India</h5>
+                            <p class="card-text">Lorem ipsum dolor sit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="my-5" align="center">WHAT ARE CUSTOMERS SAY</h4>
+        <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-image"></div>
+                        <div class="carousel-caption  d-md-block">
+                            <h5>"Impressive portfolio! Clean design and easy to find what I needed."</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image"></div>
+                        <div class="carousel-caption  d-md-block">
+                            <h5>"Your portfolio is a visual delight! The projects are beautifully displayed"</h5>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-image"></div>
+                        <div class="carousel-caption  d-md-block">
+                            <h5>"A seamless and elegant website that perfectly complements your work."</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <i class="fa-solid fa-chevron-left" style="color: red; font-size: 32px;"></i>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <i class="fa-solid fa-chevron-right" style="color: red; font-size: 32px;"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- PRICING -->
+    <div class="page-title py-5">
+        <h4>PRICING</h4>
+        <p>Choose a payment plan that work for you</p>
+    </div>
+    <section id="pricing">
+        <div class="container px-3">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">Basic</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>30 Lorem</li>
+                                <li>20 ipsum</li>
+                                <li>10 dolor</li>
+                                <li>2 amet.</li>
+                                <li><b>Excellent</b> Allow</li>
+                            </ul>
+                            <hr>
+                            <h1 class="card-title pricing-card-title">$19</h1>
+                            <p>Per Month</p>
+                            <button type="button" class="btn btn-lg"
+                                style="background-color: orangered; color: #fff;">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">Pro</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>30 Lorem</li>
+                                <li>20 ipsum</li>
+                                <li>10 dolor</li>
+                                <li>2 amet.</li>
+                                <li><b>Excellent</b> Allow</li>
+                            </ul>
+                            <hr>
+                            <h1 class="card-title pricing-card-title">$29</h1>
+                            <p>Per Month</p>
+                            <button type="button" class="btn btn-lg"
+                                style="background-color: orangered; color: #fff;">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            <h4 class="my-0 font-weight-normal">Premium</h4>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>3000 Lorem</li>
+                                <li>20 ipsum</li>
+                                <li>10 dolor</li>
+                                <li>2 amet.</li>
+                                <li><b>Excellent</b> Allow</li>
+                            </ul>
+                            <hr>
+                            <h1 class="card-title pricing-card-title">$49</h1>
+                            <p>Per Month</p>
+                            <button type="button" class="btn btn-lg"
+                                style="background-color: orangered; color: #fff;">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="page-title pt-5  ms-2">
+            <h4>CONTACT</h4>
+        </div>
+        <div class="container">
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-5 p-3 card-header2">
+                        <p class="pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h6 class="pt-2"><i class="fa-solid fa-location-dot"></i> Gujarat India.</h6>
+                        <h6 class="pt-2"><i class="fa-solid fa-mobile-screen"></i> +91 99894 789548</h6>
+                        <h6 class="pt-2"><i class="fa-solid fa-envelope"></i> examplefake@gmail.com</h6>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <form class="row g-3">
+                                <div class="col-md-6 mycol">
+                                    <label for="inputName" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="inputName"
+                                        placeholder="Enter your name">
+                                </div>
+                                <div class="col-md-6 mycol">
+                                    <label for="inputEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail"
+                                        placeholder="Enter your email">
+                                </div>
+                                <div class="col-12 mycol">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea name="message" placeholder="Message.." class="form-control" id="message"
+                                        cols="30" rows="4"></textarea>
+                                </div>
+                                <div class="col-12 mycol" align="right">
+                                    <button type="submit" class="btn">SEND</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Map -->
+        <section id="map-location">
+            <img src="https://images.unsplash.com/photo-1529281535666-429b8ed19c41?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                alt="">
+        </section>
+    </section>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
 </body>
 </body>
 
