@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main .container{
+height: 100vh;
+}
+#main .container .row>div{
+    height: 200px;
+    padding: 5px;
+}
+#main .container .row>div>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 5px;
+
+}
+.modal-body{
+    height: 400px;
+}
+.modal-body img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}

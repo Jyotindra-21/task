@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #efefef;
+}
+.navbar-brand {
+  color: #000;
+  font-weight: 900;
+}
+.navbar .nav-link {
+  color: #000 !important;
+  text-transform: uppercase;
+}
+.navbar-collapse {
+  flex-basis: 0;
+  flex-grow: unset;
+}
+.navbar ul {
+  gap: 20px;
+}
+.navbar-light .navbar-toggler {
+  border-color: transparent;
+  color: #000;
+}
+.hero {
+  background-color: #efefef;
+  position: relative;
+  height: 90vh;
+}
+.hero img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+}
+.yellow-circle {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px;
+  border-radius: 706px;
+  background-color: #e6ba38;
+}
+.hero .container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.hright {
+  width: 45%;
+  height: 100%;
+  /* background-color: green; */
+  position: relative;
+}
+.hero-content {
+  position: absolute;
+  top: 20%;
+  width: 60%;
+}
+.hero-content p {
+  color: #000;
+}
+.hero-content p span {
+  font-weight: 700;
+}
+.hleft {
+  width: 45%;
+  height: 100%;
+
+  position: relative;
+}
+.hero-social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.hero-social ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+}
+
+.hero-social ul li a i {
+  font-size: 32px;
+  color: #000;
+}
+.hleft h2 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  font-size: 100px;
+  line-height: 70px;
+  color: #222222;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+.hleft p{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.offcanvas-body ul li a{
+  color: #000;
+  font-size: 20px;
+}
+.offcanvas-body ul li a:hover{
+  color: #e6ba38;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+  }
+}
