@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class a {
+            dis() {
+                var a = 10, b = 20, sum = a + b;
+                document.write(sum)
+            }
+        }
+        class b {
+            dis() {
+                var a = 10, b = 20, sub = a - b;
+                document.write(sub)
+            }
+        }
+        class c {
+            dis() {
+                var a = 10, b = 20, multi = a * b;
+                document.write(multi)
+            }
+        }
+        const obj = [new a, new b, new c];
+        obj.forEach(msg => {
+            msg.dis()
+        });
+    </script>
+</body>
+
+</html>
