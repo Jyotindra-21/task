@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Show Result</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container p-5">
+        <fieldset>
+            <legend class="pb-2">STUDENT MARK FORM</legend>
+        <form onsubmit="return result()">
+            <div class="row mb-3">
+                <label for="hn" class="col-sm-2 col-form-label">Hindi</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" placeholder="Enter Mark Hindi" id="hn">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="eng" class="col-sm-2 col-form-label">English</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" placeholder="Enter Mark English" id="eng">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="guj" class="col-sm-2 col-form-label">Gujarati</label>
+                <div class="col-sm-10">
+                    <input type="number" class="form-control" placeholder="Enter Mark Gujarati" id="guj">
+                </div>
+            </div>
+            <input type="submit" class="btn btn-primary">
+        </form>
+    </fieldset>
+    <fieldset class="pt-5">
+        <legend>STUDENT RESULT</legend>
+        <h1 id="total"></h1>
+        <h1 id="percentage"></h1>
+        <h1 id="grade"></h1>
+    </fieldset>
+    </div>
+
+<div class="container">
+   
+</div>
+
+    <script>
+        function result() {
+            var hindi = document.getElementById("hn").value;
+            var english = document.getElementById("eng").value;
+            var gujrati = document.getElementById("guj").value;
+            var total = +hindi + +english + +gujrati;
+            var per = (total / 300) * 100;
+            document.getElementById('total').innerHTML = "Total Mark : "+ total;
+            document.getElementById("percentage").innerHTML ="Your Percentage  is "+ per + "%";
+            if (per >= 90) {
+                document.getElementById("grade").innerHTML = "Your Grade is : A"
+            } else if (per >= 70) {
+                document.getElementById("grade").innerHTML = "Your Grade is : B"
+            } else if (per >= 60) {
+                document.getElementById("grade").innerHTML = "Your Grade is : C"
+            } else if (per >= 40) {
+                document.getElementById("grade").innerHTML = "Your Grade is : D"
+            } else {
+                document.getElementById("grade").innerHTML = "Sorry You are Fail"
+            }
+            ;
+            return false;
+        }
+
+    </script>
+</body>
+
+</html>
