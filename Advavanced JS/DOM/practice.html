@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice DOM</title>
+</head>
+
+<body>
+
+    <div>
+        <p class="ptag">Lorem ipsum dolor sit amet.</p>
+        <p class="ptag">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="ptag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus!</p>
+        <p class="ptag">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, qui.</p>
+    </div>
+
+    <div>
+        <h1>HELLO</h1>
+        <h1>HOW</h1>
+        <h1>ARE</h1>
+        <h1>YOU</h1>
+        <h1>?</h1>
+
+    </div>
+
+    <button onclick="two()">color all different</button>
+
+    <button onclick="samecolor(this.value)" value="red">RED</button>
+    <button onclick="samecolor(this.value)" value="green">GREEN</button>
+    <button onclick="samecolor(this.value)" value="blue">BLUE</button>
+    <button onclick="samecolor(this.value)" value="yellow">YELLOW</button><br>
+    <button onclick="colorHeading()" value="yellow">COLOR HEADING</button>
+
+
+    <script>
+
+        var twop = document.getElementsByClassName("ptag");
+        function two() {
+
+            twop[0].style.color = "red"
+            twop[1].style.color = "yellow"
+            twop[2].style.color = "green"
+            twop[3].style.color = "blue"
+            console.log(twop);
+        }
+
+        function samecolor(color) {
+            if (color === "red") {
+                for (let i = 0; i < twop.length; i++) {
+                    const element = twop[i];
+                    element.style.color = "red"
+                }
+            } else if (color === "green") {
+                for (let i = 0; i < twop.length; i++) {
+                    const element = twop[i];
+                    element.style.color = "green"
+                }
+            }
+            else if (color === "blue") {
+                for (let i = 0; i < twop.length; i++) {
+                    const element = twop[i];
+                    element.style.color = "blue"
+                }
+            }
+            else if (color === "yellow") {
+                for (let i = 0; i < twop.length; i++) {
+                    const element = twop[i];
+                    element.style.color = "yellow"
+                }
+            } else {
+                alert("color not valid")
+            }
+        }
+
+    </script>
+
+    <script>
+        function colorHeading() {
+            var getelement = document.getElementsByTagName("h1")
+            for (let i = 0; i < getelement.length; i++) {
+                const element = getelement[i];
+                element.style.backgroundColor = "red"
+                element.style.color = "white"
+            }
+        }
+    </script>
+</body>
+
+</html>

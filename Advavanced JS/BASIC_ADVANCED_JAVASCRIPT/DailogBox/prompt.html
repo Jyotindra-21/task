@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromptBox</title>
+</head>
+
+<body>
+    <h1 id="student"></h1>
+    <button onclick="studentName()">Click</button>
+    <script>
+        function studentName() {
+            var name = prompt("Enter your name !") 
+            // alert(name === "jyotindra")
+            {
+                (name === "jyotindra")
+                ? (document.getElementById("student").innerHTML = `${name} you create me !!!`)
+                : (document.getElementById("student").innerHTML = ` How are you ${name} !`)
+            }
+            // if (name === "jyotindra") {
+            //     document.getElementById("student").innerHTML = `${name} you create me !!!`
+            // } else {
+            //     document.getElementById("student").innerHTML = ` How are you ${name} !`
+            // }
+
+        }
+    </script>
+</body>
+
+</html>

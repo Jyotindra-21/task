@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend align="center">Validate Form</legend>
+        <h2 id="error"
+            style="margin: 5px auto; padding: 5px 15px; border-radius: 20px; width: fit-content; color: red; text-align: center; background-color: rgba(255, 0, 0, 0.137);">
+        </h2>
+        <form action="" method="" onsubmit="return validation(this)">
+            <table align="center" border="1" cellpadding="10px" cellspacing="10px">
+                <tr>
+                    <td><label for="fname">First Name : </label></td>
+                    <td><input type="text" name="firstname" id="fname"></td>
+                </tr>
+                <tr>
+                    <td><label for="lname">Last Name : </label></td>
+                    <td><input type="text" name="lastname" id="lname"></td>
+                </tr>
+                <tr>
+                    <td><label for="pwd">Password : </label></td>
+                    <td><input type="password" name="password" id="pwd"></td>
+                </tr>
+                <tr>
+                    <td><label for="cpwd">Confirm Password : </label></td>
+                    <td><input type="password" name="cpassword" id="cpwd"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email : </label></td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender : </label></td>
+                    <td>
+                        <input type="radio" name="gender" value="m" id="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="f" id="female">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Hobby : </label></td>
+                    <td>
+                        <input type="checkbox" name="hobby" value="cricket" id="cricket">
+                        <label for="cricket">Cricket</label>
+
+                        <input type="checkbox" name="hobby" value="reading" id="reading">
+                        <label for="reading">Reading</label>
+
+                        <input type="checkbox" name="hobby" value="playing" id="playing">
+                        <label for="playing">Playing</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country : </label></td>
+                    <td>
+                        <select name="country" class="form-control" id="country">
+                            <option value="">-Select Country-</option>
+                            <option value="India">India</option>
+                            <option value="Usa">Usa</option>
+                            <option value="India">Japan</option>
+                            <option value="Usa">Rasia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="edu">Education : </label></td>
+                    <td>
+                        <select name="edu" id="edu" class="form-control" multiple min="1" max="3">
+                            <option value="">-Select Education-</option>
+                            <option value="10th">10th</option>
+                            <option value="12th">12th</option>
+                            <option value="BE">BE</option>
+                            <option value="B.Tech">B.Tech</option>
+                            <option value="Tech">
+                                <M class="Tech"></M>
+                            </option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="address">Adrress : </label></td>
+                    <td>
+                        <textarea name="address" id="address" cols="30" rows="10" placeholder="Address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="dp">Profile Pic : </label></td>
+                    <td>
+                        <input type="file" name="dp" id="dp" onchange="check(this)">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td><label for="resume">Resume : </label></td>
+                    <td><input type="file" name="resume" id="resume" onchange="check1(this)"></td>
+                </tr>
+                <tr>
+                    <td><label for="rate">Rate : </label></td>
+                    <td> <input type="range" name="rate" min="0" max="10" id="rate"></td>
+                </tr>
+                <tr>
+                    <td><label for="color">Color : </label></td>
+                    <td> <input type="color" name="color" id="color"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date Of Birth: </label></td>
+                    <td> <input type="date" name="dob" id="dob"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input id="submit" type="submit" value="Submit"> <input type="reset"
+                            value="Reset"> </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+    <script src="./validation.js"></script>
+</body>
+
+</html>

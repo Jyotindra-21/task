@@ -8,17 +8,21 @@
 </head>
 
 <body>
-    <h1 id="demo"></h1>
+    <p id="p">1000</p>
 
-    <script>
-        var counts = setInterval(test , 100);
-        var upto = 0;
+    <script src="./h.js">
 
+        var count = setInterval(test, [100])
+        var upto = 0
         function test() {
-            var count = document.getElementById('demo').innerHTML = ++upto;
-            if (upto == 500) {
+             
+
+            if (upto == document.getElementById('demo').innerHTML) {
+                ++upto;
                 clearInterval(counts)
-            }
+            }else(
+                count
+            )
         }
     </script>
 </body>

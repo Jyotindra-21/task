@@ -21,24 +21,28 @@
 
         .container {
             display: flex;
-            gap: 100px;
-            justify-content: center;
-            padding: 20px;
+            justify-content: space-between;
+            padding: 50px;
             transition: all 1s;
             position: relative;
         }
 
         .box {
-            height: 100px;
+            height: 200px;
             width: 200px;
             border: 2px solid black;
             transition: all .5s;
         }
+        .box:nth-child(2) {
+            transform: scale(1.2);
+        }
+        .box:nth-child(4) {
+            transform: scale(1.2);
+        }
 
         .box:nth-child(3) {
-            position: absolute;
-            /* left: 50%; */
-            transform: scale(1.5,1.2) translateX(50%);
+            transform: scale(1.4);
+            z-index: 1;
         }
 
         .arrow {
@@ -99,14 +103,12 @@
 <script>
     var container = document.getElementById('main-box');
     function leftarrow() {
-      var firstchild =  container.firstElementChild
-      container.append(firstchild)
-    //   container.style.translate = "100px"
+        container.append(container.firstElementChild)
+        //  container.style.translate = "100px"
     }
     function rightarrow() {
-      var lastchild =  container.lastElementChild
-      container.prepend(lastchild)
-    //   container.style.translate = "-100px"
+        container.prepend(container.lastElementChild)
+        // container.style.translate = "-100px"
     }
 </script>
 

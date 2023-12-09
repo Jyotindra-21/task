@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card</title>
+
+    <style>
+        
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .container {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            display: none;
+        }
+
+        label {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        input[type="number"] {
+            font-size: 18px;
+            border: 2px solid grey;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        span {
+            color: red;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <div class="container">
+        <label for="cardnum">Enter Card Number</label>
+        <input id="cardnum" type="number" name="card" placeholder="0000 0000 0000 0000"
+            onkeypress="check(this.value)">
+        <img id="mycard" src="" alt="">
+        <span></span>
+    </div>
+</body>
+
+<script>
+
+    function check(number) {
+        if (+number.trim().length <= 16) {
+            var cardnum = +number.substring(0, 4);
+            if (cardnum >= 1000 && cardnum < 4000) {
+                document.getElementById("mycard").style.display = "block"
+                var img = document.getElementsByTagName("img")[0].src = "./img/rupay.png"
+                cardnum = 0;
+            } else if (cardnum >= 4000 && cardnum < 7000) {
+                document.getElementById("mycard").style.display = "block"
+                var img = document.getElementsByTagName("img")[0].src = "./img/mastercard.png"
+            } else if (cardnum >= 7000 && cardnum < 8000) {
+                document.getElementById("mycard").style.display = "block"
+                var img = document.getElementsByTagName("img")[0].src = "./img/visa.png"
+            } else if (cardnum >= 8000) {
+                document.getElementsByTagName("span")[0].innerText = "Invalid Card"
+            } else {
+                document.getElementById("mycard").style.display = "none"
+                var img = document.getElementsByTagName("img")[0].src = ""
+                document.getElementsByTagName("span")[0].innerText = ""
+            }
+        }else{
+            alert("NOT VALID !");
+            document.getElementById('cardnum').value =`${number.substring(0, 16)}`
+        }
+    }
+</script>
+
+</html>
