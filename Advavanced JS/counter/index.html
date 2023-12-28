@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .count-div {
+            background-color: #fcdc00;
+            font-size: 22px;
+            width: fit-content;
+            overflow: hidden;
+        }
+
+        #count {
+            font-weight: 900;
+            font-family: Arial, Helvetica, sans-serif;
+            animation: rotatec 1s ;
+        }
+        @keyframes rotatec {
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(-100%);
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="count-div">
+        <h1 id="count">1000</h1>
+    </div>
+
+
+
+    <script>
+
+        var mcount = 0
+
+        // console.log( < number);
+        var number = +document.getElementById('count').innerHTML
+        var mcount = 0
+        function counting() {
+            document.getElementById('count').innerHTML = mcount++
+            if (number < mcount) {
+                clearInterval(a)
+            }
+        }
+        var a = setInterval(counting, 1);
+    </script>
+</body>
+
+</html>

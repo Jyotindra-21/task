@@ -32,7 +32,7 @@
         label {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 18px;
-        }
+      }
 
         input[type="number"] {
             font-size: 18px;
@@ -40,16 +40,12 @@
             border-radius: 5px;
             padding: 5px;
         }
-
         span {
             color: red;
             font-size: 18px;
         }
     </style>
 </head>
-
-
-
 <body>
 
     <div class="container">
@@ -85,7 +81,7 @@
             }
         }else{
             alert("NOT VALID !");
-            document.getElementById('cardnum').value =`${number.substring(0, 16)}`
+            document.getElementById('cardnum').value =`${number.substring(0, 15)}`
         }
     }
 </script>
