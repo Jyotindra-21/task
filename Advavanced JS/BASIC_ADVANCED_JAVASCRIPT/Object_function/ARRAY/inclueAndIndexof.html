@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array | includes and  indexOf</title>
+</head>
+
+<body>
+
+    <script>
+        //The JavaScript array includes() method checks whether the given array contains the specified element. It returns true if an array contains the element, otherwise false.
+
+        var arr = ["AngularJS", "Node.js", "JQuery"]
+        var result = arr.includes("AngularJS");
+        document.writeln(result + "</br>");
+
+        var arr = ["AngularJS", "Node.js", "JQuery"]
+        var result = arr.includes("AngularJS", 1); //returns false, as "AngularJS" is not present after index 1.  
+        document.writeln(result + "</br>");
+
+        //indexOf() method is used to search the position of a particular element in a given array. This method is case-sensitive.
+        var arr = ["C", "Python", "Java" ,"Cpp"];
+        var result = arr.indexOf("cpp");
+        document.writeln(result + "</br>");
+
+        var arr = ["C", "C++", "Python", "C++", "Java"];
+        var result = arr.indexOf("C++", 2);
+        document.writeln(result + "</br>");
+
+    </script>
+</body>
+
+</html>

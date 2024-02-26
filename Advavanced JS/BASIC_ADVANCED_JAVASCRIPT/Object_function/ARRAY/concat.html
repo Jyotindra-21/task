@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONCAT TWO ARRAYS</title>
+</head>
+
+<body>
+    <ul id="heros">
+
+    </ul>
+    <script>
+        // Concat two different arrays
+        
+        let marvel = ["Spider Man", "Iron Man", "Captain America", "THOR", "HULK"]
+        let dc = ["Bat Man", "Super Man", "Joker"]
+
+        let AllHeros = marvel.concat(dc)
+        // let AllHeros = [...marvel,...dc]
+
+        AllHeros.forEach((value) => {
+            document.getElementById("heros").innerHTML += `<li>${value}</li>`
+        })
+
+
+    </script>
+</body>
+
+</html>

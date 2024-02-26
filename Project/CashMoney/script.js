@@ -1,5 +1,5 @@
 // notes array
-var notes = [2000, 500, 200, 100, 50, 20, 10];
+var notes = [ 2000,500, 200, 100, 50, 20, 10];
 var notesImg = [
   "https://paisaboltahai.rbi.org.in/images/2000-note-front.png",
   "https://paisaboltahai.rbi.org.in/images/500-note-front.png",

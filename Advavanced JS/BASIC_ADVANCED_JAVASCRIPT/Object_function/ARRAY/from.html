@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array | form</title>
+</head>
+
+<body>
+
+    <script>
+        var arr = Array.from("You are viewing an example of string"); //The string will get converted to an array.  
+        document.write("The resultant is: <br>" + arr + "</br>");
+
+
+        function func(...aa) {
+            // console.log(Array.isArray(aa));
+            aa.forEach((e) => {
+                document.write(Array.from(e) + "</br>"); //Using from() method  
+                console.log(Array.from(e));
+            })
+            // console.log(Array.from(arg) );
+        }
+        func('John', 'Roy', 'Jess', 'Mary'); //value passed to function f().  
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entries</title>
+</head>
+
+<body>
+    <ul id="heros">
+
+    </ul>
+    <script>
+        // Concat two different arrays
+
+        let marvel = ["Spider Man", "Iron Man", "Captain America", "Thor", "Hulk"]
+        let dc = ["Bat Man", "Super Man", "Joker"]
+
+        let AllHeros = marvel.concat(dc)
+        // let AllHeros = [...marvel,...dc]
+
+        let obj =  AllHeros.entries()
+        console.log(Array.isArray(obj));
+
+        for (const i of obj) {
+            console.log(i);
+            document.getElementById("heros").innerHTML += `<li>${i}</li>`
+        }
+        // AllHeros.forEach((value) => {
+        // })
+
+
+    </script>
+</body>
+
+</html>

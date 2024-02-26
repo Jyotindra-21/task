@@ -4,7 +4,7 @@ fetch(`https://jsonplaceholder.typicode.com/photos`)
 
 function showdata(data_obj) {
   const movies = document.getElementById("movies");
-  let loadder =  document.getElementById("loading");
+  let loadder = document.getElementById("loading");
 
   for (const mydata of data_obj) {
     var html = `
@@ -15,13 +15,11 @@ function showdata(data_obj) {
           <h5 class="card-title">${mydata.title}</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of
               the card's content.</p>
-         
       </div>
   </div>
 </div>
     `;
     movies.insertAdjacentHTML("beforeend", html);
-
     loadder.style.display = "none";
   }
 }

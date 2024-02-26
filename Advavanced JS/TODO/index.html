@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 align="center">TODO LIST </h1>
+        <div class="add-container">
+            <input type="text" name="task" placeholder="Enter your task" id="task">
+            <button id="addBtn" onclick="addtask()">ADD TASK</button>
+        </div>
+        <div class="showTask">
+            <table border="1">
+                <caption>MY TODO</caption>
+                <thead>
+                    <tr>
+                        <th>TASK</th>
+                        <th>ACTION</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const mytodo = getCookie().todo
+        const allTasks = [...mytodo]
+        const tbody = document.getElementById("tbody")
+        const mylist = () => {
+            if (allTasks.length === 0) {
+                tbody.innerHTML += `<tr>
+                                <td colspan="2">ADD SOME TASK 😕</td>
+                            </tr>
+                            `
+            } else {
+                allTasks.forEach((value, key) => {
+                    let html = `<tr id="todo-${key}">
+                                <td>${value}</td>
+                                <td><button class="acbtn" onclick="deleteTask(${key})">DONE</button> <button class="acbtn acbtn-del" onclick="deleteTask(${key})">DELETE</button></td>
+                            </tr>
+                            `
+                    tbody.innerHTML += html
+                })
+            }
+        }
+        mylist()
+        function addtask() {
+            const newTask = document.getElementById("task");
+            if (newTask.value !== "") {
+                allTasks.push(newTask.value)
+                setCookie('todo', allTasks);
+                newTask.value = ""
+                tbody.innerHTML = ""
+                mylist()
+            }
+        }
+        function deleteTask(id) {
+            tbody.innerHTML = ""
+            allTasks.splice(id, 1)
+            setCookie('todo', allTasks);
+            mylist()
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Counter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>MONEY COUNTER</h1>
+        <div class="wraper">
+            <div class="notes">
+                <form action="">
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>NOTE VALUE</th>
+                                <th>Number of Notes</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="tbody">
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    <h4 class="total-title">Total</h4>
+                                </td>
+                                <td>
+                                    <h4 id="total-notes">0</h4>
+                                </td>
+                                <td>
+                                    <h4 id="total">0</h4>
+                                    <h5 id="total-inword">Zero.</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <input type="reset" value="RESET" onclick="resetForm()">
+                                </td>
+                            </tr>
+                        </tfoot>
+
+                        
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./NumberToWord.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

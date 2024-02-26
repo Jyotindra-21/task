@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check</title>
+</head>
+
+<body>
+    <ul id="heros">
+
+    </ul>
+    <script>
+        //The JavaScript array every() method checks whether all the given elements in an array are satisfying the provided condition
+        var marks = [50, 40, 45, 37, 20];
+        // check the all value is greater then 10 
+        function check(value) {
+            return value > 10;  //return false, as marks[4]=20  
+        }
+        document.writeln(marks.every(check) + "</br>");
+
+    </script>
+</body>
+
+</html>
