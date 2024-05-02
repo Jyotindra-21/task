@@ -1,0 +1,28 @@
+.search_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.main {
+  margin: auto;
+  width: 100%;
+}
+.search {
+  padding: 10px 5px;
+  font-size: 24px;
+  border-radius: 5px;
+}
+.table {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  border-collapse: collapse;
+}
+.table thead {
+  background-color: gray;
+  color: white;
+}
+.table tr td {
+  padding: 10px;
+}
